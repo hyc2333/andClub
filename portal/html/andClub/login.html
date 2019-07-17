@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>会员认证</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/hm_base.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/login.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--本页JS文件-->
+    <script type="text/javascript" src="../../js/andClub/login.js"></script>
+</head>
+<body>
+<!--登录页banner-->
+<div class="login_banner">
+    <img src="../../images/andClub/login_banner.png" alt="logo"/>
+</div>
+<!--登录框-->
+<div class="input_grounp">
+    <input type="tel" placeholder="请输入手机号" maxlength="11"/>
+    <div class="input_bar">
+        <div></div>
+    </div>
+    <div class="code_window">
+        <input type="text" placeholder="请输入验证码" maxlength="6"/>
+        <button class="hqyzm" disabled>获取验证码</button>
+    </div>
+</div>
+<!--提示文字-->
+<div class="VIPtitle">
+    <img class="VIPtitle_line" src="../../images/andClub/VIPline.png" style="left: 0;">
+    <img class="VIPtitle_line transform360" src="../../images/andClub/VIPline.png" style="right: 0;">
+    <span>仅会员可享有会员权益</span>
+</div>
+<!--主按钮-->
+<button class="login_btn" disabled>认证会员身份</button>
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+</script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="031527da-da2b-4f94-8f8a-f6438d1d6f0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/andClub.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/flex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/iscroll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/public_pop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/V2_0/文件说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/hm_base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/css/andClub/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/activityCard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/activityCard_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/activityDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/activityDetails_NotBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/activityList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/clubType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_course.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_course_none.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_info_NoBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_info_Noyuyue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_info_Style2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_info_Style2_NoBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/coach_info_Style2_Noyuyue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/contactUs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/contactUs_Content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/feedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/findcoach.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/infocontent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/infocontent_none.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/myDC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/myactivity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/myactivity_det.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/myactivity_mbm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/mycourse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/mycourse_wyy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/myfeedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/myfeedback_noRecord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/personalCenter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/signOnlineFail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/signOnlineOver.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/signOnlineSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/signOnlineSuccess_pro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/sitelist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/unbound.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/userInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/html/andClub/文件说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/Su_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/Su_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/Trophy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/actIcon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/actIcon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/actlistBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/andegg_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/card_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/card_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/classChecked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/classIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/classIcon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/classIcon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/classIcon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/classIcon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/coachUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/coachdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/contArr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/detIcon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/detIcon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/disabledBtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/fj1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/fj2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/fj3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/fj4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/grayArr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/hdbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/head_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/head_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/head_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/head_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/juanbian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/kobe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/little_blue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/little_green.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/little_red.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/little_yellow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/loading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/lzImg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/lzImg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/nail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/personalCenterIcon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/personalCenterIcon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/personalCenterIcon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/type7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/V2_0/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/VIPline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/btn_style2-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/btn_style2-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/btn_style2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/dq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/himg_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/himg_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/hook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/hook2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/login_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/main_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/main_btn_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/main_btn_gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/uImg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/images/andClub/yycd_none.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/activityCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/activityList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/clubType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/coach_course.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/contactUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/contactUs_Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/draggabilly.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/elastiStack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/feedback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/findcoach.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/iscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/jquery.lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/modernizr.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/myactivity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/mycourse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/mycourse_wyy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/public_popwindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/unbound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/V2_0/文件说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/VIPinfo_write.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/infocontent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portal/js/andClub/sitelist.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/andClub.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="189" />
+    <option name="y" value="18" />
+    <option name="width" value="1115" />
+    <option name="height" value="719" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="andClub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andClub" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="andClub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="andClub" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="031527da-da2b-4f94-8f8a-f6438d1d6f0e" name="Default Changelist" comment="" />
+      <created>1563372075538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563372075538</updated>
+      <workItem from="1563372076840" duration="277000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="277000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="189" y="18" width="1115" height="719" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24976787" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/portal/js/andClub/V2_0/文件说明.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

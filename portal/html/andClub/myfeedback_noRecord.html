@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>留言反馈</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+</head>
+<body>
+
+
+<ul class="lb_actJxzList">
+    <li class="lb_actLiStyle_none">
+        <img src="../../images/andClub/V2_0/andegg_4.png" alt="暂无反馈记录"/>
+        <p class="font_4">暂无反馈记录</p>
+    </li>
+</ul>
+
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+
+</body>
+</html>

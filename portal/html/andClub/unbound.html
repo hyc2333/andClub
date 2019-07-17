@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>手机号码解绑</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--页面逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/unbound.js"></script>
+</head>
+<body>
+<!--banner-->
+<div class="login_banner">
+    <img src="../../images/andClub/login_banner.png" alt="logo"/>
+</div>
+
+<!--用户号码 开始-->
+<section class="lb_unbNum font_4">
+    当前绑定号码：<span>13509879877</span>
+</section>
+<!--用户号码 结束-->
+
+<!--解绑按钮 开始-->
+<button type="button" class="lb_unbBtn font_2">
+    <i></i>解绑
+</button>
+<!--解绑按钮 结束-->
+
+<!--遮罩开始(必须)-->
+<div class="mask"></div>
+<!--遮罩结束-->
+
+<!--弹窗的父Id（必须）-->
+<div id="Popwindow_content"></div>
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+</script>
+</body>
+</html>

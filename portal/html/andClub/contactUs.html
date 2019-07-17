@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>联系我们</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--本页逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/contactUs.js"></script>
+</head>
+<body>
+
+<!--常见问题 开始-->
+<section class="lb_CusBox">
+    <div class="lb_CusTitle">常见问题</div>
+    <ul class="lb_CusList font_4">
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>关于活动</span></li>
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>关于课程</span></li>
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>关于积分</span></li>
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>关于活动</span></li>
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>关于课程</span></li>
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>关于积分</span></li>
+        <!--下拉bar-->
+        <li class="lb_CusListBar" flex="main:center cross:center">
+            <!--加上CLASS=iconDir箭头朝上-->
+            <i></i>
+        </li>
+    </ul>
+</section>
+<!--常见问题 结束-->
+
+<!--留言反馈 开始-->
+<section class="lb_CusBox">
+    <div class="lb_CusTitle">留言反馈</div>
+    <ul class="lb_CusList font_4">
+        <li flex="main:justify cross:center" class="lb_CusItem"><span>问题/意见</span></li>
+        <!--下拉bar-->
+        <li class="lb_CusListBar" flex="main:center cross:center">
+            <i></i>
+        </li>
+    </ul>
+</section>
+<!--留言反馈 结束-->
+
+<!--架空层-->
+<div class="lb_Cuslyfk"></div>
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+
+</body>
+</html>

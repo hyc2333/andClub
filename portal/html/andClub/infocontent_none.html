@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>订场地</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/hm_base.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/login.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--本页JS文件-->
+    <script type="text/javascript" src="../../js/andClub/infocontent.js"></script>
+</head>
+<body>
+<div class="inc_section inc_head">
+    <!--头像-->
+    <div class="inc_h_img f_left"></div>
+    <!--信息-->
+    <div class="inc_h_info f_left">
+        <p class="user_name">中博羽毛球馆</p>
+        <p class="inc_h_info_prj">
+            <span class="bgcolor_1">羽毛球</span>
+            <span class="bgcolor_2">乒乓球</span>
+        </p>
+        <p class="dc_date in_h_info_add">福州市鼓楼区西路62号福州鼓楼区西二环北路62号福市鼓楼区西二环北路62号</p>
+        <p class="dc_date">0591-87886011</p>
+    </div>
+</div>
+
+<!--v2.0.1新增 无可预约场地图片 开始-->
+<div class="lb_infocontentNone">
+    <img src="../../images/andClub/yycd_none.png" alt="无可预约场地"/>
+    <p class="font_8" style="color: #d1d1d1;">该场馆暂无可预约场地~</p>
+</div>
+<!--v2.0.1新增 无可预约场地图片 结束-->
+
+<!--遮罩-->
+<div class="mask" style="display: none;"></div>
+<!--确定预约信息弹窗-->
+<div class="orderInfo" style="display: none;" id="certainInfo">
+    <div class="Bomb_title">确定预约已选中的场地</div>
+    <div class="orderInfo_content dc_date">
+        支付：<span id="order_payInfo">20元话费</span><br/>
+        场地：<span id="order_add">乒乓球1号桌</span><br/>
+        时间：<span id="order_date">2016-11-11</span>&nbsp;<span id="order_time">15:00-16:00</span>
+    </div>
+    <div class="btn_grounp">
+        <div class="btn cancel">取消</div>
+        <div class="btn confirm">确定</div>
+    </div>
+</div>
+<!--预约成功信息弹窗-->
+<div class="orderInfo" style="display: none;" id="successWindow">
+    <div class="Bomb_title">预约成功</div>
+    <div class="orderInfo_content dc_date">
+        支付：<span>20元话费</span><br/>
+        场地：<span>乒乓球1号桌</span><br/>
+        时间：<span>2016-11-11</span><span>15:00-16:00</span>
+    </div>
+    <div class="Bomb_btn" id="successBtn">
+        知道了
+    </div>
+</div>
+<!--预约失败-->
+<div class="Bombox" style="display: none;" id="failWindow">
+    <div class="Bomb_title_fail">
+        <span>预约失败</span>
+        <p class="dc_date">被人抢先一步了，请尝试预约其它场地</p>
+    </div>
+    <div class="Bomb_btn" id="failBtn">
+        知道了
+    </div>
+</div>
+</body>
+</html>

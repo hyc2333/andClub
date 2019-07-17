@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>我的课程</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--本页逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/mycourse_wyy.js"></script>
+</head>
+<body>
+
+<!--头部 开始-->
+<header id="lb_PcenterHeader">
+    <!--pageActive为选中状态-->
+    <div class="font_1 lb_fl pageActive" data-lbclass="lb_yuyuelist">已预约(<span>0</span>)</div>
+    <div class="font_1 lb_fr" data-lbclass="lb_overlist">已结束(<span>5</span>)</div>
+</header>
+<!--头部 结束-->
+
+<!--已预约课程列表 开始-->
+<ul class="lb_courseContent lb_yuyuelist">
+    <!--未预约状态-->
+    <li class="lb_wyyImage">
+        <img src="../../images/andClub/V2_0/andegg.png" alt="和蛋"/>
+        <p class="font_1">还未预约教练课程，快去找教练来支招~</p>
+    </li>
+</ul>
+<!--已预约课程列表 结束-->
+
+<!--已结束课程列表 开始-->
+<ul class="lb_courseContent lb_overlist d_none">
+    <!--未有上课记录状态-->
+    <li class="lb_noRecordImage">
+        <img src="../../images/andClub/V2_0/andegg_2.png" alt="和蛋"/>
+        <p class="font_1">
+            还未有上课记录，积极上课、踊跃预约哦！<br/>
+            （预约教练课程，快找“教练支招”）
+        </p>
+    </li>
+</ul>
+<!--已结束课程列表 结束-->
+
+
+
+<!--取消预约按钮 开始-->
+<section class="lb_CancelYuyue" flex="cross:center">
+    <!--按钮加上disabled为不可选状态，同时隐藏课程数，去掉为可选状态，显示课程数-->
+
+    <button type="button" class="font_2 lb_btnCancel d_none">
+        <i id="lb_courseNum">1</i>取消预约
+    </button>
+
+    <!--lb_btnCancel为取消预约按钮  lb_Coach为教练支招按钮-->
+    <button type="button" class="font_2 lb_Coach">教练支招</button>
+</section>
+<!--取消预约按钮 结束-->
+
+<!--遮罩开始(必须)-->
+<div class="mask"></div>
+<!--遮罩结束-->
+
+<!--弹窗的父Id（必须）-->
+<div id="Popwindow_content"></div>
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elasticstack {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+	height: 70%;
+	list-style: none;
+	-webkit-perspective: 1000px;
+	-webkit-perspective-origin: 50% 150%;
+	perspective: 1000px;
+	perspective-origin: 50% 150%;
+}
+
+.no-js .elasticstack {
+	max-width: 1090px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.elasticstack li {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 85%;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+	opacity: 0;
+	cursor: pointer;
+	-webkit-transform: translate3d(0,0,-180px);
+	transform: translate3d(0,0,-180px);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	background-image: url(../../../images/andClub/V2_0/card.svg);
+	background-size: 110%;
+	background-position: -3px -3px;border-radius: 10px;
+}
+
+/*运动类颜色*/
+.swiper-wrapper>.swiper-slide:first-child .elasticstack li{background-color: #559ff2;}
+/*文化类颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(2) .elasticstack li{background-color: #91c06e;}
+/*生活类颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(3) .elasticstack li{background-color: #edc33d;}
+/*商业类颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(4) .elasticstack li{background-color: #d25e67;}
+
+
+
+
+.no-js .elasticstack li {
+	position: relative;
+	display: inline-block;
+	opacity: 1;
+	margin: 10px;
+	cursor: default;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.elasticstack li img {
+	display: block;
+}
+
+.elasticstack li h5 {
+	margin: 0 5px;
+	color: #143f51;
+	height: 60px;
+	text-align: right;
+	font-size: 1.4em;
+	font-family: "Sacramento", cursive;
+	line-height: 60px;
+}
+
+.elasticstack li.animate {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.elasticstack li.move-back {
+	/* http://matthewlein.com/ceaser/ */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+}

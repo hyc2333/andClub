@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>在线报名</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+</head>
+<body>
+
+<!--banner 开始-->
+<section class="lb_sosBanner lb_sosFail" flex="cross:center">
+    <div>
+        <span class="font_9">参与失败</span>
+        <p class="font_6">（活动参与人数已满，请关注更多精彩活动）</p>
+    </div>
+    <p class="font_6">更多活动细节请查阅活动说明</p>
+</section>
+<!--banner 结束-->
+
+<!--规则标题 开始-->
+<section class="lb_sosTitle" flex="main:justify cross:center">
+    <div flex-box="4"></div>
+    <span flex-box="2" class="font_4">活动规则</span>
+    <div flex-box="4"></div>
+</section>
+<!--规则标题 结束-->
+
+<!--规则主体 开始-->
+<p class="lb_sosContent font_1">
+    1、活动时间：<br/>
+    2、活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容<br/>
+    3、活动内容活动内容活动内容活动内容活动内容活动内容活动内容<br/>
+    1、活动时间：<br/>
+    2、活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容<br/>
+    3、活动内容活动内容活动内容活动内容活动内容活动内容活动内容<br/>
+    1、活动时间：<br/>
+    2、活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容活动内容<br/>
+    3、活动内容活动内容活动内容活动内容活动内容活动内容活动内容<br/>
+</p>
+<!--规则主体 结束-->
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+
+</body>
+</html>

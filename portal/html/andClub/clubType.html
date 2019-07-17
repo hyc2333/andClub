@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>福建和俱乐部</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--本页逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/clubType.js"></script>
+</head>
+<body>
+
+<section class="lb_clubTypeMain">
+    <!--运动类开始-->
+    <dl class="font_1">
+        <dt class="lb_clubTypeSport">运动类</dt>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type1.png" alt="乒羽网俱乐部"/>
+                </div>
+                <span>乒羽网俱乐部</span>
+            </div>
+        </dd>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type2.png" alt="徒步跑团"/>
+                </div>
+                <span>徒步跑团</span>
+            </div>
+        </dd>
+    </dl>
+    <!--运动类结束-->
+    <!--文化类开始-->
+    <dl class="font_1">
+        <dt class="lb_clubTypeCulture">文化类</dt>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type3.png" alt="全球大讲堂"/>
+                </div>
+                <span>全球大讲堂</span>
+            </div>
+        </dd>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type4.png" alt="摄影俱乐部"/>
+                </div>
+                <span>摄影俱乐部</span>
+            </div>
+        </dd>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type5.png" alt="品茶俱乐部"/>
+                </div>
+                <span>品茶俱乐部</span>
+            </div>
+        </dd>
+    </dl>
+    <!--文化类结束-->
+    <!--生活类开始-->
+    <dl class="font_1">
+        <dt class="lb_clubTypeLife">生活类</dt>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type6.png" alt="健康俱乐部"/>
+                </div>
+                <span>健康俱乐部</span>
+            </div>
+        </dd>
+    </dl>
+    <!--生活类结束-->
+    <!--商业类开始-->
+    <dl class="font_1">
+        <dt class="lb_clubTypeBusiness">商业类</dt>
+        <dd flex="main:justify cross:center">
+            <div>
+                <div class="lb_typeImg">
+                    <img class="lazy"  data-original="../../images/andClub/V2_0/type7.png" alt="理财俱乐部"/>
+                </div>
+                <span>理财俱乐部</span>
+            </div>
+        </dd>
+    </dl>
+    <!--商业类结束-->
+</section>
+
+
+
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+
+</body>
+</html>

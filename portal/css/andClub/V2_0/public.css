@@ -1,0 +1,76 @@
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,address,cite,del,em,img,q,u,i,dl,dt,dd,ol,ul,li,form,label,table,tr,th,td,caption,tbody,tfoot,thead,article,aside,details,summary,figure,figcaption,footer,header,menu,nav,section,audio,input,select,textarea{padding:0;margin:0;border:none;}
+*{font-family:"microsoft yahei",Helvetica,Arial,Tahoma,sans-serif;}
+body{min-width:320px;max-width:640px;margin:0 auto;cursor:default;word-break:break-all;white-space:normal;-webkit-tap-highlight-color:rgba(255,255,255,0);}
+header,footer,nav,section,menu,article,aside{display:block;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+img{vertical-align:middle;}
+.clearfix:after{content:" ";display:block;height:0;clear:both;visibility:hidden}
+.boxsizing{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  }
+/*去除苹果设备默认属性*/
+input[type="button"],input[type="submit"],input[type="reset"],input[type="text"],input[type="tel"],button{-webkit-appearance: none;}
+textarea{-webkit-appearance:none;border-radius:0;}
+/*去除Chrome等浏览器文本框默认发光边框*/
+input:focus,textarea:focus,button:focus{outline:none;}
+
+/*媒体查询*/
+
+/*匹配iphone4*/
+@media screen and (max-width: 325px){
+    .font_1{font-size: 12px;}
+    .font_2{font-size: 15px;}
+    .font_3{font-size: 12px;}
+    .font_4{font-size: 13px;}
+    .font_5{font-size: 34px;}
+    .font_6{font-size: 12px;}
+    .font_7{font-size: 18px;}
+    .font_8{font-size: 14px;}
+    .font_9{font-size: 33px;}
+}
+/*匹配iphone6,6s*/
+@media screen and (max-width: 385px) and (min-width: 326px){
+    .font_1{font-size: 14px;}
+    .font_2{font-size: 17px;}
+    .font_3{font-size: 13px;}
+    .font_4{font-size: 16px;}
+    .font_5{font-size: 40px;}
+    .font_6{font-size: 12px;}
+    .font_7{font-size: 20px;}
+    .font_8{font-size: 15px;}
+    .font_9{font-size: 38px;}
+}
+/*匹配iphone plus*/
+@media screen and (max-width: 425px) and (min-width: 386px){
+    .font_1{font-size: 15px;}
+    .font_2{font-size: 19px;}
+    .font_3{font-size: 14px;}
+    .font_4{font-size: 18px;}
+    .font_5{font-size: 44px;}
+    .font_6{font-size: 13px;}
+    .font_7{font-size: 22px;}
+    .font_8{font-size: 17px;}
+    .font_9{font-size: 43px;}
+}
+/*匹配ipad*/
+@media (max-width: 640px) and (min-width: 426px){
+    .font_1{font-size: 16px;}
+    .font_2{font-size: 21px;}
+    .font_3{font-size: 15px;}
+    .font_4{font-size: 19px;}
+    .font_5{font-size: 47px;}
+    .font_6{font-size: 14px;}
+    .font_7{font-size: 24px;}
+    .font_8{font-size: 18px;}
+    .font_9{font-size: 48px;}
+}
+@media (min-width: 641px){
+    .font_1{font-size: 17px;}
+    .font_2{font-size: 23px;}
+    .font_3{font-size: 16px;}
+    .font_4{font-size: 20px;}
+    .font_5{font-size: 50px;}
+    .font_6{font-size: 14px;}
+    .font_7{font-size: 24px;}
+    .font_8{font-size: 18px;}
+    .font_9{font-size: 48px;}
+}

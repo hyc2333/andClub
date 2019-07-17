@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>留言反馈</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--本页逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/feedback.js"></script>
+</head>
+<body>
+
+<dl class="lb_feedMain">
+    <dt>
+        <input type="text" class="lb_feedItem lb_feedTitle font_3" placeholder="请输入标题（20字以内）" maxlength="20"/>
+        <label class="font_6">标题数字请控制在20字以内</label>
+    </dt>
+    <dd>
+        <textarea class="lb_feedItem lb_feedContent font_6" placeholder="请简要描述您要反馈的问题或建议"></textarea>
+        <p class="font_6">和俱乐部预计在<span>24小时</span>内回复您</p>
+        <button type="button" class="lb_feedSubmit font_2">提交</button>
+        <a href="#" class="lb_myFeedback font_6">我的反馈</a>
+    </dd>
+</dl>
+
+
+
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+
+</body>
+</html>

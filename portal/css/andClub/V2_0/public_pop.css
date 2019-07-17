@@ -1,0 +1,61 @@
+/*媒体查询*/
+/*匹配iphone4*/
+@media screen and (max-width: 325px){
+    .POPfont_1{font-size: 12px;}
+    .POPfont_4{font-size: 13px;}
+}
+/*匹配iphone6,6s*/
+@media screen and (max-width: 385px) and (min-width: 326px){
+    .POPfont_1{font-size: 14px;}
+    .POPfont_4{font-size: 16px;}
+}
+/*匹配iphone plus*/
+@media screen and (max-width: 425px) and (min-width: 386px){
+    .POPfont_1{font-size: 15px;}
+    .POPfont_4{font-size: 18px;}
+}
+/*匹配ipad*/
+@media (max-width: 640px) and (min-width: 426px){
+    .POPfont_1{font-size: 16px;}
+    .POPfont_4{font-size: 19px;}
+}
+@media (min-width: 641px){
+    .POPfont_1{font-size: 17px;}
+    .POPfont_4{font-size: 20px;}
+}
+
+.mask,.onePop,.PopContent,.PopContent>.PopTitle,.PopContent>.PopItem,.PopButton_one,.PopBtn_grounp,.PopBtn_grounp>button{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+
+/*----------------------------遮罩开始--------------------------------*/
+.mask{width: 100%;height: 100%;position: fixed;display: none;
+    background-color: rgba(0,0,0,0.6);left: 0;top:0;z-index: 9999;}
+#Popwindow_content{display: none;}
+/*----------------------------遮罩结束--------------------------------*/
+
+/*一个按钮的弹窗开始*/
+.onePop{width: 90%;overflow: hidden;position: fixed;z-index: 10000;left:50%;top:50%;
+    -ms-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%); }
+.PopContent{width: 100%;border-radius: 8px 8px 0 0;background-color: white;font-weight: bolder;}
+.PopContent>.PopTitle{width: 100%;padding: 22px 10px 10px;font-weight: bold;text-align: center;color: #232323;}
+.PopContent>.PopItem{width: 100%;padding: 0 10% 10px;text-align: center;color: #559ff2;}
+.PopButton_one{width: 100%;background-color: #469dff;border: none;height: 50px;border-radius: 0 0 8px 8px;color: white;}
+/*一个按钮的弹窗结束*/
+
+/*两个弹窗样式开始*/
+.PopBtn_grounp{width: 100%;overflow: hidden;}
+.PopBtn_grounp>button{width: 50%;border: none;color: white;height: 50px;font-weight: bolder;font-size: inherit;}
+.PopBtn_grounp>button:first-child{float: left;border-radius: 0 0 0 8px;background-color: #99c5f7;color: #559ff2;}
+.PopBtn_grounp>button:last-child{float:right;border-radius: 0 0 8px 0;background-color:#559ff2;}
+/*两个弹窗样式结束*/
+
+
+
+
+
+
+
+
+
+
+

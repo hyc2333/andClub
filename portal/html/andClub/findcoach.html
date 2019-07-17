@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>找教练</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--渐进加载样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/iscroll.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--渐进加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/iscroll.js"></script>
+</head>
+<body id="findCoachBody">
+
+<!--顶部tab 开始-->
+<section class="lb_coaTab font_4">
+    <!--加上 class="lb_coaArrUp" 可改变箭头方向-->
+    <div class="lb_fl">
+        <p flex="cross:center main:center"><span>全部项目</span><i></i></p>
+        <select class="lb_coaTabPrjBtn">
+            <option value="全部项目">全部项目</option>
+            <option value="乒乓球">乒乓球</option>
+            <option value="羽毛球">羽毛球</option>
+        </select>
+    </div>
+
+    <div class="lb_fr">
+        <p flex="cross:center main:center"><span>全部级别</span><i></i></p>
+        <select class="lb_coaTabLevBtn">
+            <option value="全部级别">全部级别</option>
+            <option value="国家级">国家级</option>
+            <option value="高级">高级</option>
+            <option value="中级">中级</option>
+        </select>
+    </div>
+</section>
+<!--顶部tab 结束-->
+
+
+
+<div id="wrapper" class="lb_findCoaContent">
+    <div id="scroller">
+        <!--全部教练 开始-->
+        <ul class="lb_coaPrjMain">
+            <!--所有列表动态生成-->
+        </ul>
+        <!--全部教练 结束-->
+        <!--上拉bar-->
+        <div id="pullUp">
+            <span class="pullUpIcon"></span>
+            <span class="pullUpLabel">上拉加载更多...</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+<!--本页逻辑-->
+<script type="text/javascript" src="../../js/andClub/V2_0/findcoach.js"></script>
+</body>
+</html>

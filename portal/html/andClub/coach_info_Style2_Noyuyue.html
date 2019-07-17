@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>教练信息</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+</head>
+<body>
+<!--教练名字 开始-->
+<header class="lb_coaInfoSy2Head font_4">
+    羽毛球教练：许中
+</header>
+<!--教练名字 结束-->
+
+<!--教练照片 开始-->
+<section class="lb_coaInfoSy2Img">
+    <!--由于这里的矩形框里放img不能完美兼容各个移动端，所以这里用背景图代替-->
+    <div style="background-image: url(../../images/andClub/V2_0/lzImg2.jpg)"></div>
+</section>
+<!--教练照片 结束-->
+
+<!--教练信息详情 开始-->
+<dl class="lb_coaInfoList">
+    <dt>级别</dt>
+    <dd class="font_6">高级</dd>
+</dl>
+<!--教练信息详情 结束-->
+
+<!--教练简介 开始-->
+<dl class="lb_coaInfoMain">
+    <dt>执教经历</dt>
+    <dd class="font_6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+        Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+        tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien
+        nunc eget odio.
+    </dd>
+</dl>
+<!--教练简介 结束-->
+
+<!--底部按钮 开始-->
+<section class="lb_coaInfoMainBtn" flex="main:center cross:center">
+    <!--加上disabled按钮就不可点击-->
+    <button type="button" class="font_2" disabled>预约已满</button>
+</section>
+<!--底部按钮 结束-->
+
+
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>我的活动</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--本页逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/myactivity.js"></script>
+</head>
+<body>
+
+<!--头部 开始-->
+<header id="lb_activityTab">
+    <!--pageActive为选中状态-->
+    <div class="font_1 lb_fl pageActive" data-lbclass="lb_actJxzList">进行中</div>
+    <div class="font_1 lb_fr" data-lbclass="lb_actoverList">已结束</div>
+</header>
+<!--头部 结束-->
+
+<!--进行中 列表-->
+<ul class="lb_actJxzList">
+    
+    <!--class=lb_actLiStyle_none为未报名模块-->
+    <li class="lb_actLiStyle_none">
+        <img src="../../images/andClub/V2_0/andegg_3.png" alt="未报名"/>
+        <p class="font_4">亲，您还没报名过任何的活动哟</p>
+        <a href="#" class="font_4">去看看都有哪些精彩活动</a>
+    </li>
+    
+</ul>
+
+<!--已结束 列表-->
+<ul class="lb_actoverList d_none">
+    <!--class=lb_actLiStyle_none为未报名模块-->
+    <li class="lb_actLiStyle_none">
+        <img src="../../images/andClub/V2_0/andegg_3.png" alt="未报名"/>
+        <p class="font_4">亲，您还没报名过任何的活动哟</p>
+        <a href="#" class="font_4">去看看都有哪些精彩活动</a>
+    </li>
+</ul>
+
+
+
+
+<!--遮罩开始(必须)-->
+<div class="mask"></div>
+<!--遮罩结束-->
+
+<!--弹窗的父Id（必须）-->
+<div id="Popwindow_content"></div>
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+</body>
+</html>

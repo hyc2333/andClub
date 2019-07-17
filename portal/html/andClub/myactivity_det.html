@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>我的活动</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+
+</head>
+<body id="lb_actDetBg">
+
+<div class="lb_actDetMain">
+    <h2 class="font_4">活动名称活动名称<br/>活动名称活动名称活动名称</h2>
+    <span class="lb_actDetLine"></span>
+
+    <!--活动时间 开始-->
+    <div class="lb_actDetDateTime font_1">
+        <i class="clockIcon"></i>
+        <span>2016-11-11</span>
+        <span>13:00</span>
+    </div>
+    <!--活动时间 结束-->
+
+    <!--活动提示 开始-->
+    <div class="lb_actDetPro font_1">
+        <i class="promptIcon"></i>
+        <span>请自备运动器材参与活动</span>
+    </div>
+    <!--活动提示 结束-->
+
+    <!--活动说明 开始-->
+    <p class="lb_actDetContent font_6">
+        活动说明：
+        <br/><br/>
+        1、活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动。
+        <br/><br/>
+        2、说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明。
+        <br/><br/>
+        3、活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明。
+        <br/><br/>
+        1、活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动。
+        <br/><br/>
+        2、说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明。
+        <br/><br/>
+        3、活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明。
+        <br/><br/>
+        1、活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动。
+        <br/><br/>
+        2、说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明。
+        <br/><br/>
+        3、活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明。
+    </p>
+    <!--活动说明 结束-->
+</div>
+
+
+<!--遮罩开始(必须)-->
+<div class="mask"></div>
+<!--遮罩结束-->
+
+<!--弹窗的父Id（必须）-->
+<div id="Popwindow_content"></div>
+<script>
+
+
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+</body>
+</html>

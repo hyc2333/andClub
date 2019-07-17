@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>个人中心</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/hm_base.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/login.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="personal_head" onclick="window.location.href='userInfo.html';">
+    <!--用户头像-->
+    <div class="user_img"></div>
+    <!--用户信息-->
+    <div class="user_info">
+        <span class="user_name">Tng</span>
+        <p class="user_phoneNum">手机号：<span>15880077034</span></p>
+        <p class="integral"><span class="ig_icon">积分</span><span>13445</span>分</p>
+    </div>
+</div>
+
+<section class="lb_pCenterList">
+    <!--我的课程-->
+    <div class="my_dc">
+        <div class="dc_left">
+            <img src="../../images/andClub/V2_0/personalCenterIcon1.png"><span>我的课程</span>
+        </div>
+        <div class="dc_right"></div>
+    </div>
+    <!--我的订场-->
+    <div class="my_dc" onclick="window.location.href='myDC.html';">
+        <div class="dc_left">
+            <img src="../../images/andClub/icon1.png"><span>我的订场</span>
+        </div>
+        <div class="dc_right"></div>
+    </div>
+    <!--我的活动-->
+    <div class="my_dc">
+        <div class="dc_left">
+            <img src="../../images/andClub/V2_0/personalCenterIcon2.png"><span>我的活动</span>
+        </div>
+        <div class="dc_right"></div>
+    </div>
+</section>
+
+<section class="lb_pCenterList">
+    <!--账号解绑-->
+    <div class="my_dc">
+        <div class="dc_left">
+            <img src="../../images/andClub/V2_0/personalCenterIcon3.png"><span>账号解绑</span>
+        </div>
+        <div class="dc_right"></div>
+    </div>
+</section>
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+</script>
+</body>
+</html>

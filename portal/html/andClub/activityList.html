@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>活动通知</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--渐进加载样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/iscroll.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--渐进加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/iscroll.js"></script>
+</head>
+<body id="activityBody">
+
+<div id="wrapper" class="lb_actListContent">
+    <div id="scroller">
+        <!--列表内容 开始-->
+        <ul class="lb_actNoticeMain">
+
+            <!--风格一，只有文字内容 开始-->
+            <li class="lb_sctNoticeSt_1">
+                <div class="lb_actNoticeList">
+                    <h3 class="font_4">“欢腾双十一”重磅出击，史上最强力度！</h3>
+                    <p class="font_6">双十一特惠活动，A场+B场预约整月：原价230/特惠价99元，再加1元，可任选一个其他项目（游艇俱乐部、冰</p>
+                    <div class="lb_actNoticeDate font_6">10月14日 15：00</div>
+                </div>
+            </li>
+            <!--风格一，只有文字内容 结束-->
+
+
+            <!--风格二，有三张配图 开始-->
+            <li class="lb_sctNoticeSt_2">
+                <div class="lb_actNoticeList lb_actImageWindow">
+                    <h3 class="font_4">驾驭随心·释放无限潜能</h3>
+                    <ul class="lb_actNoticeImage" flex="main:left">
+                        <li style="background-image: url('../../images/andClub/V2_0/fj1.jpg')"></li>
+                        <li style="background-image: url('../../images/andClub/V2_0/fj2.jpg')"></li>
+                        <li style="background-image: url('../../images/andClub/V2_0/fj3.jpg')"></li>
+                    </ul>
+                    <div class="lb_actNoticeDate font_6">10月14日 15：00</div>
+                </div>
+            </li>
+            <!--风格二，有三张配图 结束-->
+
+
+
+            <!--风格三 只有一张图 开始-->
+            <li class="lb_sctNoticeSt_3">
+                <div class="lb_actNoticeList">
+                    <div class="lb_acttiwindow">
+                        <h3 class="font_4 lb_fl">秋日之约：醉美婺源，篁岭晒秋</h3>
+                        <div class="lb_actimg_one lb_fr" style="background-image: url(../../images/andClub/V2_0/fj1.jpg)"></div>
+                    </div>
+                    <div class="lb_actNoticeDate font_6">10月14日 15：00</div>
+                </div>
+            </li>
+            <!--风格三 只有一张图 结束-->
+
+
+            <!--风格四 只有两张图 开始-->
+            <li class="lb_sctNoticeSt_4">
+                <div class="lb_actNoticeList lb_actImageWindow">
+                    <h3 class="font_4">驾驭随心·释放无限潜能</h3>
+                    <ul class="lb_actimg_two" flex="main:left">
+                        <li style="background-image: url('../../images/andClub/V2_0/fj1.jpg')"></li>
+                        <li style="background-image: url('../../images/andClub/V2_0/fj2.jpg')"></li>
+                    </ul>
+                    <div class="lb_actNoticeDate font_6">10月14日 15：00</div>
+                </div>
+            </li>
+            <!--风格四 只有两张图 结束-->
+        </ul>
+        <!--列表内容 结束-->
+        <!--上拉bar-->
+        <div id="pullUp">
+            <span class="pullUpIcon"></span>
+            <span class="pullUpLabel">上拉加载更多...</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+</script>
+<!--本页逻辑-->
+<script src="../../js/andClub/V2_0/activityList.js"></script>
+</body>
+</html>

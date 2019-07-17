@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>个人信息</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/hm_base.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/login.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--本页JS文件-->
+    <script type="text/javascript" src="../../js/andClub/VIPinfo_write.js"></script>
+</head>
+<body>
+<!--个人信息页面-->
+<div id="page_userInfo">
+    <div class="mine_userInfo">
+        <div class="mine_main">
+            <span class="f_left">姓名</span>
+            <span class="f_right" id="page_userInfo_name">王二</span>
+        </div>
+        <div class="mine_main">
+            <span class="f_left">手机号码</span>
+            <span class="f_right">13587909876</span>
+        </div>
+        <div class="mine_main">
+            <span class="f_left">单位</span>
+            <span class="f_right" id="page_userInfo_unit">国家保监局</span>
+        </div>
+        <div class="mine_main">
+            <span class="f_left">职级</span>
+            <span class="f_right" id="page_userInfo_ulevel">保监局局长</span>
+        </div>
+        <div class="mine_main">
+            <span class="f_left">任职部门</span>
+            <span class="f_right" id="page_userInfo_department">局长办公室</span>
+        </div>
+    </div>
+    <div class="mine_btn" onclick="$(this).parent().hide();$('#page_writeInfo').show();">编辑</div>
+</div>
+
+<!--编辑个人信息页面-->
+<div id="page_writeInfo" style="display: none;">
+    <!--主页面-->
+    <div id="main_page">
+        <p class="vip_write_pr dc_date">您填写的会员信息仅自己可见</p>
+        <div class="mine_userInfo">
+            <div class="vip_main">
+                <input type="text" placeholder="姓名" id="uname" class="f_left"/>
+            </div>
+            <div class="vip_main" id="unit">
+                <span class="f_left grayfont">单位</span>
+                <i></i>
+            </div>
+            <div class="vip_main" id="ulevel">
+                <span class="f_left grayfont">职级</span>
+                <i></i>
+            </div>
+            <div class="vip_main" style="display: none;">
+                <input type="text" placeholder="任职部门" id="department" class="f_left"/>
+<!--                <span class="f_left grayfont" id="department">任职部门</span>
+                <i></i>-->
+            </div>
+        </div>
+        <div class="mine_btn" id="userInfo_submit">提交</div>
+    </div>
+    <!--输入单位名称-->
+    <div id="unitname_page" style="display: none;">
+        <div class="blue_bg">
+            <input type="text" placeholder="请输入单位名称（至少两个字）" id="unitname"/>
+            <span id="searchBtn">搜索</span>
+        </div>
+        <!--列表区域-->
+        <ul class="unitname_content">
+        </ul>
+    </div>
+    <!--遮罩层-->
+    <div class="mask" style="display: none;"></div>
+    <!--职级选择框-->
+    <div class="down_window" id="ulevel_select" style="display: none;">
+        <div class="down_content">
+            <div class="down_title">选择职级</div>
+        </div>
+        <ul class="level_content">
+            <li>厅级</li>
+            <li>处级</li>
+        </ul>
+        <div class="mine_btn" id="down_window_retin">返回</div>
+    </div>
+<!--    &lt;!&ndash;职级选择框&ndash;&gt;
+    <div class="down_window" id="dptm_select" style="display: none;">
+        <div class="down_content">
+            <div class="down_title">选择部门</div>
+        </div>
+        <ul class="level_content">
+            <li>行政部</li>
+            <li>人事部</li>
+            <li>销售部</li>
+            <li>业务部</li>
+            <li>生产部</li>
+            <li>财务部</li>
+        </ul>
+        <div class="mine_btn" id="dptm_window_retin">返回</div>
+    </div>-->
+</div>
+</body>
+</html>

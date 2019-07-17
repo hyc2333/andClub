@@ -1,0 +1,258 @@
+/*媒体查询*/
+/*匹配iphone4*/
+@media screen and (max-width: 325px){
+    input,.VIPtitle>span,.user_phoneNum,.integral,.dc_left>span,.dc_name,.dc_date,.dc_xhjf,.mine_main>span,.vip_main>input,#unitname,.unitname_content li,.level_content>li,.vip_main>span{font-size: 12px;}
+    .login_btn,.user_name,.ig_icon+span,.mine_btn,.Bomb_title_fail>span,.Bomb_title,#unitname+span,.down_title,.floor_s_name{font-size: 14px;}
+    .dc_info{line-height: 26px;}
+    .inc_h_info{width: 60%;}
+    .Bomb_btn,.btn_grounp{font-size: 13px;}
+    .vip_main>i{margin-top: 3px;}
+    #unitname{width: 80%;}
+    .floor_sitecontent{padding: 13px 10px 13px 18px;}
+    .dc_f3_address>dd{width: 92%;}
+    .dc_f3_phone>dd{width: 92%;}
+    .select_window{width: 76%}
+}
+/*匹配iphone6,6s*/
+@media screen and (max-width: 385px) and (min-width: 326px){
+    .user_phoneNum,.integral,.dc_date{font-size: 13px;}
+    input,.VIPtitle>span,.dc_left>span,.dc_name,.dc_xhjf,.mine_main>span,.vip_main>input,#unitname,.unitname_content li,.level_content>li,.vip_main>span{font-size: 14px;}
+    .login_btn,.user_name,.ig_icon+span,.mine_btn,.Bomb_title_fail>span,.Bomb_title,#unitname+span,.down_title,.floor_s_name{font-size: 16px;}
+    .dc_info{line-height: 30px;}
+    .inc_h_info{width: 64%;}
+    .Bomb_btn,.btn_grounp{font-size: 15px;}
+    .vip_main>i{margin-top: 5px;}
+    #unitname{width: 80%;}
+    .floor_sitecontent{padding: 12px 10px 12px 18px;}
+    .dc_f3_address>dd{width: 92%;}
+    .dc_f3_phone>dd{width: 92%;}
+    .select_window{width: 76%}
+}
+/*匹配iphone plus*/
+@media screen and (max-width: 425px) and (min-width: 386px){
+    .user_phoneNum,.integral,.dc_date{font-size: 14px;}
+    input,.VIPtitle>span,.dc_left>span,.dc_name,.dc_xhjf,.mine_main>span,.vip_main>input,#unitname,.unitname_content li,.level_content>li,.vip_main>span{font-size: 15px;}
+    .login_btn,.user_name,.ig_icon+span,.mine_btn,.Bomb_title_fail>span,.Bomb_title,#unitname+span,.down_title,.floor_s_name{font-size: 18px;}
+    .dc_info{line-height:33px;}
+    .inc_h_info{width: 68%;}
+    .Bomb_btn,.btn_grounp{font-size: 17px;}
+    .vip_main>i{margin-top: 5px;}
+    #unitname{width: 82%;}
+    .floor_sitecontent{padding: 8px 10px 8px 18px;}
+    .dc_f3_address>dd{width: 93%;}
+    .dc_f3_phone>dd{width: 93%;}
+    .select_window{width: 76%}
+}
+/*匹配ipad*/
+@media (min-width: 426px){
+    .user_phoneNum,.integral,.dc_date{font-size: 15px;}
+    input,.VIPtitle>span,.dc_left>span,.dc_name,.dc_xhjf,.mine_main>span,.vip_main>input,#unitname,.unitname_content li,.level_content>li,.vip_main>span{font-size: 16px;}
+    .login_btn,.user_name,.ig_icon+span,.mine_btn,.Bomb_title_fail>span,.Bomb_title,#unitname+span,.down_title,.floor_s_name{font-size: 20px;}
+    .dc_info{line-height:38px;}
+    .inc_h_info{width: 70%;}
+    .Bomb_btn,.btn_grounp{font-size: 18px;}
+    .vip_main>i{margin-top: 5px;}
+    #unitname{width: 83%;}
+    .floor_sitecontent{padding: 8px 10px 8px 18px;}
+    .dc_f3_address>dd{width: 94%;}
+    .dc_f3_phone>dd{width: 94%;}
+    .select_window{width: 78%}
+}
+*{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+.login_banner{width: 100%;padding:88px 0 104px;text-align: center;}
+.login_banner>img{width: 80%;}
+/*输入框组*/
+.input_grounp{overflow: hidden;width: 90%;background-color: white;border: 1px solid #e1e1e1;margin: 0 auto;border-radius: 8px;}
+.input_grounp input{width: 100%;color: #999999;padding:18px 15px;border-radius:8px 8px 0 0;}
+.input_bar{width: 100%;padding: 0 10px;}
+.input_bar>div{border-bottom: 1px solid #f1eeec;}
+.code_window{width: 100%;overflow: hidden}
+.code_window>input{width: 60%;float: left}
+.hqyzm{width: 35%;font-size: 14px;color: white;float: right;padding: 12px 0;margin-top:5px ;
+    background-color:#a3a3a3;border: none;border-radius: 8px;display: block;margin-right: 10px;}
+.hqyzm_jh{background-color:#559ff2;}
+.hqyzm_jh:active{background-color: #4683c7;}
+/*仅会员可享有会员权益*/
+.VIPtitle{width: 90%;text-align: center;position: relative;margin: 50px auto 20px;}
+.VIPtitle_line{width:35%;position: absolute;top: 10px;z-index: -1;}
+.transform360{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */}
+.VIPtitle>span{padding: 0 10px;background-color:#f8f8f8;color: #559ff2;}
+/*主按钮*/
+.login_btn{width: 90%;margin: 0 auto 20px;background-image: url(../../images/andClub/main_btn_gray.png);
+    background-size: 100% 100%;padding: 17px 0;color: white;text-align: center;border: none;background-color: transparent;
+    display: block;  }
+.login_btn_jh{background-image: url(../../images/andClub/main_btn.png);}
+/*个人中心*/
+.personal_head{width: 100%;padding: 12px 14px;background:#559ff2;overflow: hidden;}
+.user_img{width: 80px;height: 80px;background-image: url(../../images/andClub/uImg.png);
+    background-size: cover;background-position: center center;border-radius: 15px;float: left;}
+.user_info{width: 65%;float: left;padding:6px 13px;color: white;overflow: hidden;height: 80px;}
+.user_info>.user_name{display: block;height: 33%;}
+.user_info>.user_phoneNum{color: #d1e7ff;height: 33%;}
+.integral>.ig_icon{height: 33%;display: inline-block;padding: 2px 3px;border: 1px solid white;border-radius: 3px;
+vertical-align: 1px;font-size: 12px;margin-right: 8px;}
+.my_dc{width: 100%;padding: 10px 14px;background: white;overflow: hidden;}
+.my_dc:active{background: #f7f7f7;}
+.dc_left{float: left;color: #414957;}
+.dc_left>img{width: 20px;vertical-align: -5px;margin-right: 5px;}
+.dc_right{width:5px;height:10px;float: right;background: url(../../images/andClub/arrow.png);
+background-size: 100% 100%;margin-top: 7px;}
+/*我的订场*/
+.dc_details{margin-top: 8px;width: 100%;padding-left:12px;border: 1px solid #dfe8f1;background: white;overflow: hidden;}
+.dc_details>div{overflow: hidden;}
+.dc_f1{padding-top: 14px;}
+.dc_userhead{width: 15%;height: 0;padding-bottom: 15%;background-image:url(../../images/andClub/himg_1.png);
+background-size: cover;background-position: center center;border-radius: 5px;float: left;}
+.dc_info{width: 82%;float: right;border-bottom:1px solid #dfe8f1;padding-bottom: 14px;padding-right: 14px;}
+.dc_name>i{display: inline-block;margin-left: 7px;height: 9px;width: 6px;background-image: url(../../images/andClub/arrow.png);
+background-size: 100% 100%;}
+.dc_name{overflow: hidden;}
+.dc_date{color: #7f8e9d;}
+.dc_f2{padding: 16px 14px 16px 18%;border-bottom:1px solid #dfe8f1;}
+.dc_xhjf{padding-top: 5px;}
+.dc_f3{padding: 14px 14px 14px 0;}
+.dc_f3 i{display: inline-block;width: 14px;
+    background-size: 100% 100%;margin-right: 6px;vertical-align: -3px;}
+.dc_f3_phone{overflow: hidden;}
+.dc_f3_phone>dt{width: 14px;height: 14px;background-size: 100% 100%;
+    background-image:url(../../images/andClub/icon2.png);float: left;}
+.dc_f3_phone>dd{height: 14px;float: right;}
+.dc_f3_add{width: 50%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.dc_f3_address{width: 100%;overflow: hidden;}
+.dc_f3_address>dd{display: inline-block;margin-top:-2px;float: right;}
+.dc_f3_address>dd>p{padding: 5px 0;text-align: justify;}
+.dc_f3_address>dt{
+    margin-top: 5px;
+    background-image:url(../../images/andClub/dq.png);height: 16px;display: inline-block;
+    width: 14px;background-size: 100% 100%;background-repeat: no-repeat;float: left;}
+/*个人信息*/
+.mine_userInfo{width: 100%;margin: 8px 0 45px;border: 1px solid #dfe8f1;background: white;overflow: hidden;padding: 0 14px;}
+.mine_main,.vip_main{border-bottom: 1px solid #dfe8f1;padding: 15px 0;overflow: hidden;}
+.mine_main>span{color: #414957;}
+.mine_main:last-child,.vip_main:last-child{border: none;}
+.mine_btn{width: 90%;margin:0 auto; padding: 15px 0;background-image: url(../../images/andClub/main_btn.png);
+background-size: 100% 100%;color: white;text-align: center;}
+.mine_btn:active,.login_btn_jh:active{background-image: url(../../images/andClub/main_btn_active.png);}
+/*定场地*/
+.inc_head{padding: 10px;margin-top: 0!important;}
+.inc_h_img{width: 88px;height: 88px;background-image:url(../../images/andClub/himg_1.png);
+background-size: cover;background-position: center center;}
+.inc_h_info{margin-left: 18px;}
+.inc_h_info_prj>span{padding: 2px;border-radius: 5px;color: white;font-size: 12px;}
+.in_h_info_add{width: 100%;}
+.in_h_info_add_1{width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.inc_h_info>p{line-height: 22px;}
+.inc_section{width: 100%;border-bottom: 1px solid #dfe8f1;border-top: 1px solid #dfe8f1;padding-left:12px;background: white;overflow: hidden;margin-top: 8px;}
+.inc_title{padding: 12px 0;border-bottom: 1px solid #dfe8f1;}
+.inc_title:before{content: "";display: inline-block;width: 4px;height: 15px;background: #559ff2;margin-right: 7px;vertical-align: -2px;}
+.inc_selecte{padding-right: 12px;}
+.inc_selecte_window{width: 100%;padding:16px 0 14px;border-bottom: 1px solid #dfe8f1;overflow: hidden;}
+.inc_section>.inc_selecte:last-child .inc_selecte_window{border: none!important;}
+.inp_radio>input{display: none;}
+.inp_radio>input+label{display: inline-block;width: 17px;height: 17px;border-radius: 50%;border: 1px solid #dfe8f1;
+background-color: white;background-image:none;background-size: 10px 8px;background-position: center center;background-repeat: no-repeat;}
+.inp_radio>input:checked+label{background-color: #559ff2;border: none;background-image:url(../../images/andClub/hook.png);}
+.inc_type_more>i{width:5px;height:10px;background: url(../../images/andClub/arrow.png);
+    background-size: 100% 100%;display: inline-block;}
+.pay_icon{vertical-align: middle;width: 20px;}
+.pay_title{display: inline-block;line-height: 24px;vertical-align: middle;padding-left: 10px;}
+input[name='pay']+label{margin-top: 100%;}
+.inc_blueblock{width: 100%;background-color: #45acf2;padding: 0 12px;position: fixed;left: 0;bottom: 0;display: table;}
+.inc_blueblock_input{border-bottom: 1px solid rgba(0,0,0,0.1);display: table-cell;height:45px;vertical-align: middle; }
+.inc_blueblock_input>input{display: none;}
+.inc_blueblock_input>input+label{width: 17px;height: 17px;border-radius: 50%;border:1px solid rgba(0,0,0,0.2);
+    display: inline-block;background-color:#45acf2;vertical-align: middle;}
+.inc_blueblock_input>input:checked+label{background-color: white;border:1px solid #dddddd;background-image: url(../../images/andClub/hook2.png);
+    background-size: 10px 8px;background-position: center center;background-repeat: no-repeat;}
+.inc_blueblock_input>span{color: white;vertical-align: 0;}
+.payment{height: 58px;vertical-align: middle;display: table-cell;overflow: hidden;}
+.payment>p{color: white;float: left;margin-top: 12px;}
+.payment>p>span{color: #ffc513;}
+.sub_btn{float: right;padding: 12px 22px;color: white!important;background-image: url(../../images/andClub/btn_style2.png);
+background-size: 100% 100%;border: none;background-color: transparent;display: inline-block;}
+.sub_btn:active{background-image: url(../../images/andClub/btn_style2-1.png);}
+.sub_btn:disabled{background-image: url(../../images/andClub/btn_style2-3.png);}
+.select_window{float: right;padding-right:12px;text-align: right;}
+#yytime,#cd_type{display: inline-block;vertical-align: middle;width: 95%}
+.yytime_i{width:5px;height:10px;background: url(../../images/andClub/arrow.png);
+    background-size: 100% 100%;display: inline-block;vertical-align: middle}
+/*遮罩*/
+.mask{width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);position: fixed;z-index: 10;}
+/*弹窗1，带有确定取消两个按钮*/
+.Bombox,.orderInfo{width: 90%;position: fixed;z-index:13;top: 0;left: 0;}
+.Bomb_title{width: 100%;border-radius: 8px 8px 0 0;background: white;text-align: center;padding: 17px 20px;border-bottom: 1px solid #ececec;}
+/*弹窗内容*/
+.orderInfo_content{width: 100%;padding: 20px 17px;line-height: 27px;background-color: white;}
+/*弹框按钮组*/
+.btn_grounp{width: 100%;overflow: hidden;}
+.btn{width: 50%;padding: 20px;text-align: center;color: white;}
+/*取消按钮*/
+.cancel{background-color: #cbcbcb;border-radius: 0 0 0 8px;float: left;}
+.cancel:active{background-color: #aaaaaa;}
+/*确定按钮*/
+.confirm{background-color:#27baff;border-radius: 0 0 8px 0;float: right;}
+.confirm:active{background: #259bd4;}
+/*弹框知道了按钮*/
+.Bomb_btn{width: 100%;padding: 17px 0;color: white;background: #27baff;border-radius: 0 0 8px 8px;
+    text-align: center;}
+.Bomb_btn:active{background: #259bd4;}
+/*失败弹窗*/
+.Bomb_title_fail{width: 100%;border-radius: 8px 8px 0 0;background: white;
+    padding: 20px;text-align: center;}
+.Bomb_title_fail>p{padding-top:17px;}
+/*会员信息填写*/
+#main_page,#unitname_page{width: 100%;overflow: hidden;}
+.vip_write_pr{padding: 12px 12px 4px;}
+.vip_main>input{padding: 3px 0;width: 80%;color: black;}
+.vip_main>input::-webkit-input-placeholder{color: #cbcbcb;}
+.vip_main>span{width: 80%; }
+.vip_main>.grayfont{color:#cbcbcb;}
+.vip_main>i{display: block;float: right;width: 5px;height: 10px;background-image: url(../../images/andClub/arrow.png);
+    background-size: 100% 100%;}
+.blue_bg{background-color:#27baff;padding: 8px 5%; }
+#unitname{padding: 8px 9px;background: white;border-radius: 8px;color: #414957;}
+#unitname+span{display: inline-block;padding: 8px 9px;color: white;vertical-align: middle;}
+#unitname+span:active{color: #1a6f97;}
+.unitname_content{background: white;padding: 0 12px;}
+.unitname_content li{padding: 15px 0;border-bottom: 1px solid #dfe8f1;color: #414957;}
+.unitname_content li:last-child{border: none;}
+.unitname_content li:active{color:#27BAFF;}
+/*底部选择*/
+.down_window{width: 100%;background: white;position: fixed;left: 0;bottom: 0;z-index: 20;}
+.down_title{padding: 15px 0;text-align: center;border-bottom: 1px solid #ececec;}
+.down_content{width: 100%;padding: 0 12px;}
+.level_content{width: 100%;height: 208px;overflow-y: auto;padding: 0 12px;}
+.level_content>li{padding: 15px 0;border-bottom: 1px solid #ececec;color: #7f8e9d; }
+#down_window_retin,#dptm_window_retin{margin:10px auto 22px;}
+/*定场馆页*/
+.floor_p{width:90%;padding: 9px 0;border-bottom: 1px dashed #e2e2e2;margin: 0 auto;}
+.floor_main{width: 100%;box-shadow: 0 1px 3px rgba(63,78,93,0.3);overflow: hidden;border-radius: 10px;}
+.floor_siteimg{width: 30%;height: 100px;background-image: url(../../images/andClub/himg_1.png);
+    background-size: cover;background-position: center center;background-repeat: no-repeat;float: left;
+border-radius:10px 0 0 10px;}
+.floor_sitecontent{width: 70%;height: 100px;background: white;border-radius: 0 10px 10px 0;float: right;
+overflow:hidden;}
+.floor_s_name:after{display: block;clear: both;content: '';}
+.floor_s_name>.f_yh{color:#559ff2;border-radius: 5px;border: 1px solid #559ff2;padding: 2px;font-size: 12px;float: right;}
+.floor_prj{color: white;font-size: 12px;margin: 3px 0;}
+.floor_prj>span{border-radius: 5px;padding: 2px;margin-right: 5px;}
+.floor_prj>span:last-child{margin: 0;}
+
+
+
+
+/*v2.0新增样式*/
+.lb_pCenterList{width: 100%;padding: 7px 0;}
+.lb_pCenterList>.my_dc{border-bottom: 1px solid #dfe8f1;}
+.lb_pCenterList>.my_dc:first-child{border-top: 1px solid #dfe8f1;}
+
+/*V2.0.1新增样式*/
+.lb_infocontentNone{position: fixed;left: 50%;top:50%;width: 70%;-moz-transform: translate(-50%,-15%);
+    transform: translate(-50%,-15%);-webkit-transform: translate(-50%,-15%);text-align: center;}
+.lb_infocontentNone>img{width: 30%;}
+.lb_infocontentNone>p{width: 100%;padding: 25px 0;}

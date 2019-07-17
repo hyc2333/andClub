@@ -1,0 +1,532 @@
+*{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+.lb_fl{float: left;}
+.lb_fr{float: right;}
+.d_none{display: none;}
+body{background: #f8f8f8;}
+html{height: 100%;}
+/*找教练页，活动通知页*/
+#findCoachBody,#activityBody,#lb_contactUsBody{height: 100%;}
+
+@media screen and (max-height: 385px){
+    .lb_actDetContent{height: 200px;}
+
+}
+@media screen and (max-height: 481px) and (min-height: 386px){
+    .lb_actDetContent{height: 230px;}
+
+}
+@media screen and (min-height: 482px){
+    .lb_actDetContent{height: 300px;}
+
+}
+
+/*我的课程样式 开始*/
+
+/*顶部按钮*/
+#lb_PcenterHeader,#lb_activityTab{width: 100%;overflow: hidden;position: fixed;left: 0;top:0;z-index: 2;}
+#lb_PcenterHeader>div,#lb_activityTab>div,.lb_coaclassTab>div{width: 50%;color: white;height: 40px;line-height: 40px;text-align: center;background: #99c5f7;}
+#lb_PcenterHeader>div.pageActive,#lb_activityTab>div.pageActive,.lb_coaclassTab>div.pageActive{background: #559ff2;}
+/*课程列表*/
+.lb_courseContent,.lb_coaclassContent,.lb_coaclassYuyue{width: 100%;padding: 10px 12px 70px;margin-top:40px;}
+.lb_courseContent>li,.lb_coaclassContent>li,.lb_coaclassYuyue>li{width: 100%;border: 1px solid #eef3f8;border-radius: 8px;background: white;
+    overflow: hidden;margin-bottom: 10px;box-shadow: 0 1px 2px #d7dfe4;position: relative;
+    -webkit-box-shadow: 0 1px 2px #d7dfe4;-moz-box-shadow: 0 1px 2px #d7dfe4;}
+.lb_courseTop{width: 100%;border-bottom: 1px solid #eef3f8;overflow: hidden;}
+.lb_checkBox{width: 20%;height: 78px;padding-bottom: 10px;visibility: hidden;}
+.lb_checkBox>img{width: 40%;}
+.lb_courseTopRight{width: 80%;}
+.lb_courseTitle{padding: 10px 0 5px;border-bottom: 1px solid #eef3f8;height: 48px;}
+.lb_courseTitle>p:first-child{color: black;}
+.lb_courseTitle>p:last-child,.lb_courseItem>p,.lb_courseAdd{color: #7f8e9d;}
+.lb_courseDate{margin-right: 12px;}
+.lb_courseItem{width: 100%;height: 30px;}
+.lb_courseIcon{display: inline-block;margin-right: 4px;background-repeat: no-repeat;background-size: 100%;vertical-align: -3px;}
+.timeIcon{width: 13px;height: 16px;background-image: url(../../../images/andClub/V2_0/classIcon1.png);}
+.numIcon{width: 20px;height: 14px;background-image: url(../../../images/andClub/V2_0/classIcon2.png);}
+.teachIcon{width: 15px;height: 13px;background-image: url(../../../images/andClub/V2_0/classIcon3.png);}
+.lb_courseAdd{width: 100%;text-align: center;padding: 8px;}
+.addIcon{width: 10px;height: 15px;background-image: url(../../../images/andClub/V2_0/classIcon.png);}
+.lb_courseNonIcon{min-width: 76px;color: red;border: 1px dotted red;text-align: center;
+    position: absolute;top:1%;right:2%;border-radius: 8px;display: none;padding: 3px 0;}
+
+
+
+
+/*课程选中状态*/
+li.lb_courseCheacked{background: #559ff2;border: 1px solid #518ed2;}
+li.lb_courseCheacked>.lb_courseTop,li.lb_courseCheacked .lb_courseTitle{border-bottom: 1px solid #6aa9f0;}
+li.lb_courseCheacked .lb_checkBox{visibility:visible;}
+li.lb_courseCheacked .lb_courseTitle>p,li.lb_courseCheacked .lb_courseItem>p,li.lb_courseCheacked .lb_courseAdd{color: white;}
+li.lb_courseCheacked .timeIcon{background-image: url(../../../images/andClub/V2_0/classIcon1.png);}
+li.lb_courseCheacked .numIcon{background-image: url(../../../images/andClub/V2_0/classIcon2.png);}
+li.lb_courseCheacked .teachIcon{background-image: url(../../../images/andClub/V2_0/classIcon3.png);}
+li.lb_courseCheacked .addIcon{background-image: url(../../../images/andClub/V2_0/classIcon7.png);}
+/*课程不可选状态*/
+li.lb_courseNon{background: #dfdfdf;border: 1px solid #dfdfdf;}
+li.lb_courseNon .lb_courseTop,li.lb_courseNon .lb_courseTitle{border-bottom-color: #d1d5d9;}
+li.lb_courseNon .lb_courseNonIcon{display: block;}
+
+/*未预约/未记录状态*/
+li.lb_wyyImage,li.lb_noRecordImage{width: 100%;text-align: center;border: none;border-radius: inherit;
+    background: transparent;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;
+    position: fixed;top:50%;left: 50%;transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);}
+li.lb_wyyImage>img{width: 50%;margin-bottom: 33px;}
+li.lb_noRecordImage>img{width: 70%;margin-bottom: 46px;}
+li.lb_noRecordImage>p{line-height: 30px;}
+
+/*取消预约按钮*/
+.lb_CancelYuyue{width: 100%;position: fixed;left: 0;bottom: 0;background: white;border-top: 1px solid #eef3f8;
+height: 60px;padding: 0 12px;}
+.lb_CancelYuyue>button{background: url(../../../images/andClub/main_btn.png) no-repeat transparent;
+    background-size: 100% 100%;color: white;border: none;width: 100%;height: 44px;}
+.lb_CancelYuyue>button:disabled{color: white;border: none;width: 100%;height: 44px;
+    background: url(../../../images/andClub/V2_0/disabledBtn.png) no-repeat transparent;
+    background-size: 100% 100%;}
+.lb_CancelYuyue>button>i{background: #5292da;border-radius: 20px;display: inline-block;
+    margin-right: 10px;font-style: normal;min-width: 20px;min-height: 20px;padding:0 5px;}
+.lb_CancelYuyue>button:disabled>i{display: none;}
+/*我的课程样式 结束*/
+
+
+/*我的活动样式 开始*/
+/*----进行中----*/
+.lb_actJxzList{width: 100%;padding: 10px 12px 0;margin-top: 40px;}
+.lb_actJxzList>li{width: 100%;background: #91c06e;border-radius: 8px;box-shadow: 0 2px 1px #dfe8f1;border: 1px solid #dfe8f1;
+    -webkit-box-shadow: 0 2px 1px #dfe8f1;-moz-box-shadow: 0 2px 1px #dfe8f1;height: 93px;overflow: hidden;margin-bottom: 10px;}
+.lb_actContent{width: 93%;height: 100%;background: #f8f8f8;border-radius: 0 10px 10px 0;box-shadow: 2px 0 1px #84b85d;
+    -webkit-box-shadow: 2px 0 1px #84b85d;-moz-box-shadow: 2px 0 1px #84b85d;}
+.lb_actJxzList>li:after,.lb_coaclassTab:after{content: '';display: block;clear: both;}
+.lb_actListBar{width: 7%;height: 100%;background: url(../../../images/andClub/V2_0/actlistBar.png) no-repeat;
+background-size: 30% auto;background-position: center center;display: block;}
+.lb_actTitle{height: 50%;width:100%;flex-wrap:wrap;padding: 0 12px;
+    -webkit-flex-wrap: wrap;-moz-flex-wrap:wrap;padding-right: 10px;}
+.lb_actDateTime{height: 25%;width: 100%;color: #7f8e9d;padding-right: 10px;}
+.lb_actDateTime>i{width: 17px;height: 17px;background: url(../../../images/andClub/V2_0/actIcon1.png) no-repeat;
+background-size: 100%;display: inline-block;margin-top: 3px;}
+.lb_actDateTime>.lb_actDate{margin:0 10px 0 5px;}
+.lb_actPrompt{width: 100%;border-top: 1px solid #eef3f8;height: 25%;color: #e4686d;padding-right: 12px;}
+.lb_actPrompt>i{width: 4px;height: 11px;background: url(../../../images/andClub/V2_0/actIcon2.png) no-repeat;
+    background-size: auto 100%;display: inline-block;margin-right: 5px;}
+.lb_actLiStyle_2 .lb_actDateTime{height: 50%;}
+
+/*已结束*/
+.lb_actoverList{width: 100%;padding: 10px 12px 0;margin-top: 40px;}
+.lb_actoverList>li{width: 100%;background: #e4686d;border-radius: 8px;box-shadow: 0 2px 1px #dfe8f1;border: 1px solid #dfe8f1;
+    -webkit-box-shadow: 0 2px 1px #dfe8f1;-moz-box-shadow: 0 2px 1px #dfe8f1;height: 93px;overflow: hidden;margin-bottom: 10px;}
+.lb_actoverContent{width: 93%;height: 100%;background: #f8f8f8;border-radius: 0 10px 10px 0;box-shadow: 2px 0 1px #d1494f;
+    -webkit-box-shadow: 2px 0 1px #d1494f;-moz-box-shadow: 2px 0 1px #d1494f;}
+.lb_actoverList .lb_actDateTime{width: 80%;}
+.lb_actResult{width: 100%;border-top: 1px solid #eef3f8;height: 25%;color: #f2bb0a;padding-right: 12px;}
+.lb_actResult>i{width: 17px;height: 17px;background: url(../../../images/andClub/V2_0/Trophy.png) no-repeat;
+    background-size: 100%;display: inline-block;margin-right: 5px;}
+
+/*未报名*/
+.lb_actJxzList>.lb_actLiStyle_none,.lb_actoverList>.lb_actLiStyle_none{
+    background: transparent;border-radius: inherit;box-shadow: none;border: none;
+    -webkit-box-shadow: none;-moz-box-shadow: none;height: auto;overflow: inherit;
+    text-align: center;position: fixed;left: 50%;top:50%;transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);margin-bottom: 0;
+}
+.lb_actLiStyle_none>img{width: 50%;}
+.lb_actLiStyle_none>p{color: #414957;margin:5% 0;}
+.lb_actLiStyle_none>a,.lb_unbBtn{display: block;width: 80%;padding: 4% 0;margin: 0 auto;color: white;
+    background: url(../../../images/andClub/main_btn.png) no-repeat;background-size: 100% 100%;}
+
+/*我的活动详情页*/
+#lb_actDetBg{width: 100%;height: 100%;background-image: url(../../../images/andClub/V2_0/hdbg.jpg);
+    background-size: cover;background-repeat: no-repeat;overflow: hidden;}
+.lb_actDetMain{width: 90%;background: rgba(49,45,45,0.7);border-radius: 10px;position: fixed;
+    top:50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);padding-top: 20px;}
+.lb_actDetMain>h2{color: white;text-align: center;}
+.lb_actDetLine{
+    background: -webkit-linear-gradient(left, transparent , white , transparent);
+    background: -moz-linear-gradient(left, transparent , white , transparent);
+    background: linear-gradient(left, transparent , white , transparent);
+width: 95%;display: block;height: 1px;margin: 3% auto;}
+.lb_actDetDateTime{color: white;padding: 0 10%;}
+.lb_actDetDateTime>i,.lb_actDetPro>i{display: inline-block;width: 17px;height: 17px;background-repeat:no-repeat;
+background-size: 100%;vertical-align: -3px;}
+.lb_actDetPro{color: #e4686d;padding: 3% 10%;}
+.clockIcon{background-image: url(../../../images/andClub/V2_0/detIcon1.png);}
+.promptIcon{background-image: url(../../../images/andClub/V2_0/detIcon2.png);}
+.lb_actDetContent{color: #b2b8bf;overflow-y:scroll;width: 80%;margin:0 auto 30px;}
+.lb_actDetContent::-webkit-scrollbar-track{background: rgba(0,0,0,0.2);}
+.lb_actDetContent::-webkit-scrollbar{width: 5px;border-radius: 5px;margin-left: 20px;}
+.lb_actDetContent::-webkit-scrollbar-thumb{width: 5px;border-radius: 5px;background: rgba(255,255,255,0.3);}
+/*我的活动样式 结束*/
+
+
+/*解除绑定页 开始*/
+.login_banner{width: 100%;padding:88px 0 104px;text-align: center;}
+.login_banner>img{width: 80%;}
+.lb_unbNum{width: 80%;background: #e0dddd;color: #a4a9b0;text-align: center;border-radius: 10px;
+margin: 0 auto 60px;padding: 30px 0;}
+.lb_unbBtn{border: none;background-color: transparent;margin-bottom: 30px;}
+.lb_unbBtn>i{width: 17px;height: 16px;background: url(../../../images/andClub/V2_0/lock.png) no-repeat;
+background-size: 100%;display: inline-block;margin-right: 10px;vertical-align: -2px;}
+/*解除绑定页 结束*/
+
+
+/*找教练 开始*/
+
+.lb_coaTab{width: 100%;background: white;border-bottom: 1px solid #dee7f0;height:8%;}
+.lb_coaTab>div{width: 50%;text-align: center;color: #414957;position: relative;height: 100%;}
+.lb_coaTab>div>p{width: 100%;text-align: center;height: 100%;position: absolute;
+left: 0;top: 0;}
+.lb_coaTab>div:first-child{border-right: 1px solid #dee7f0;}
+.lb_coaTab select{appearance:none;-moz-appearance:none;-webkit-appearance:none;opacity: 0;}
+.lb_coaTabPrjBtn,.lb_coaTabLevBtn{width: 100%;height: 100%;}
+.lb_coaTab>div i{display: inline-block;width: 12px;height: 7px;background: url(../../../images/andClub/V2_0/coachUp.png) no-repeat;
+background-size: 100%;vertical-align: 3px;margin-left: 10px;}
+.lb_coaTabLevBtn{float: right;}
+div.lb_coaArrUp i{transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);}
+/*教练列表*/
+.lb_findCoaContent{width: 100%;height: 92%;padding-top: 2%}
+.lb_coaPrjMain{padding: 0 12px 10px;width: 100%;}
+.lb_coaHeadImg{padding-left:10%;margin-right: 5%;flex-shrink: 0;-webkit-flex-shrink: 0;-moz-flex-shrink: 0;}
+.lb_coaNameLev>span:first-child,.lb_coaZdxm{color: #414957;}.lb_coaZdxm{margin-top: 5px;}
+.lb_coaNameLev>span:nth-child(2){color: #7f8e9d;margin-left: 5px;}
+.lb_coaYyBtn{margin-left: 5%;flex-shrink: 0;-webkit-flex-shrink: 0;-moz-flex-shrink: 0;padding-right: 5%;}
+.lb_coaYyBtn>span{padding: 8px;background: #7bd03e;color: white;border-radius: 5px;display: block;}
+.lb_coaPrjMain>li{margin-bottom: 10px;border: 1px solid #dfe8f1;background: white;border-radius: 10px;
+    height: 102px;box-shadow: 0 2px 1px #d7dfe4;width: 100%;}
+.lb_coaImgBox{width: 70px;height: 70px;background: #b5b8c0;border-radius: 50%;overflow: hidden;
+    border: 2px solid white;background-position:center center;background-size: cover;background-color:#b5b8c0;background-repeat: no-repeat;}
+.lb_coaInfoHimg>img{width: 110%;position: absolute;left: -5%;top:-5%;}
+/*不可预约*/
+li.lb_NoYuyue>.lb_coaYyBtn{visibility: hidden;}
+.lb_coaPrjMain>li:active{background: #559ff2;}
+.lb_coaPrjMain>li:active .lb_coaNameLev>span,.lb_coaPrjMain>li:active .lb_coaZdxm>span{color: white;}
+/*找教练 结束*/
+
+
+/*教练信息页 开始*/
+.lb_coaInfoHeader{width: 100%;padding: 41px 30px;background: #3888e2;}
+.lb_coaInfoHimg{width: 75px;height: 75px;border-radius: 10px;margin: 0 auto 20px;
+box-shadow: 0 2px 3px rgba(50,126,211,1);-webkit-box-shadow: 0 2px 3px rgba(50,126,211,1);
+    -moz-box-shadow: 0 2px 3px rgba(50,126,211,1);
+    background:#b5b8c0;position: relative;overflow: hidden;}
+.lb_coaInfoName{color: white;}
+.lb_coaInfoName>.Name_line:first-child{height: 1px;
+     background: -webkit-linear-gradient(left, #3888e2 , white);
+     background: -moz-linear-gradient(left, #3888e2 , white);
+     background: linear-gradient(left, #3888e2 , white);
+ }
+.lb_coaInfoName>.Name_line:last-child{height: 1px;
+    background: -webkit-linear-gradient(right, #3888e2 , white);
+    background: -moz-linear-gradient(right, #3888e2 , white);
+    background: linear-gradient(right, #3888e2 , white);
+}
+.lb_coaInfoList{width: 100%;border-bottom: 1px solid #dfe8f1;padding: 0 12px;background: white;}
+.lb_coaInfoList>dt,.lb_coaInfoMain>dt{padding: 12px 0;border-bottom: 1px solid #dfe8f1;color: #414957;}
+.lb_coaInfoList>dt:before,.lb_coaInfoMain>dt:before{content: '';display: inline-block;width: 4px;height: 15px;background: #559ff2;margin-right: 7px;vertical-align: -2px;}
+.lb_coaInfoList>dd{padding: 12px 0 12px 12px;color: #7f8e9d;border-bottom: 1px solid #dfe8f1;}
+.lb_coaInfoList>dd:last-child{border: none;}
+.lb_coaInfoMain{width: 100%;padding: 0 12px 80px;background: white;}
+.lb_coaInfoMain>dd{padding:15px 12px 0;color: #7f8e9d;}
+.lb_coaInfoMainBtn,.lb_notdetMainBtn{width: 100%;height: 60px;position: fixed;left: 0;bottom: 0;z-index: 2;background:#f8f8f8;padding: 0 12px;}
+.lb_coaInfoMainBtn>button,.lb_feedSubmit,.lb_notdetMainBtn>button{width: 100%;color: white;background-image: url(../../../images/andClub/main_btn.png);background-repeat: no-repeat;
+background-color: transparent;height: 44px;border: none;background-size: 100% 100%;}
+.lb_coaInfoMainBtn>button:disabled{background-image: url(../../../images/andClub/V2_0/disabledBtn.png);}
+/*教练信息页 结束*/
+
+
+/*教练信息页(风格二) 开始*/
+.lb_coaInfoSy2Head{width: 100%;height: 50px;background: #3888e2;color: white;line-height: 50px;border-bottom: 2px solid #327ed3;text-align: center;}
+.lb_coaInfoSy2Img{width: 100%;padding: 11px 16px 23px;}
+.lb_coaInfoSy2Img>div{width: 100%;border-radius: 10px;background-color:#b5b8c0;overflow: hidden;padding-top: 50%;
+background-size: cover;background-position: center center;}
+/*教练信息页(风格二) 结束*/
+
+/*联系我们 开始*/
+.lb_CusBox{width: 100%;padding-top: 11px;max-height:249px;overflow: hidden;position: relative;padding-bottom: 25px;}
+.lb_CusTitle{width: 100%;text-align: center;height: 48px;color: white;line-height: 48px;background: #559ff2;}
+.lb_CusList{border-top: 1px solid #edf1f5;background: white;margin-top: 5px;}
+.lb_CusItem{width: 100%;height:53px;padding:0 19px 0 37px;color: #414957;border-bottom: 1px solid #edf1f5;}
+.lb_CusItem:after{content: '';display: inline-block;width: 12px;height: 16px;background: url(../../../images/andClub/V2_0/coachdown.png) no-repeat;background-size: 100%;
+transform: rotate(90deg);-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);}
+.lb_CusListBar{width: 100%;height: 25px;background:white;border-bottom: 1px solid #edf1f5; position: absolute;left: 0;bottom: 0;}
+.lb_CusListBar>i{background: url(../../../images/andClub/V2_0/contArr.png) no-repeat;width: 25px;height: 12px;display: inline-block;background-size: 100%;}
+.iconDir{transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);}
+.lb_Cuslyfk{padding-top: 20px;}
+/*联系我们 结束*/
+
+
+/*常见问题页 开始*/
+.lb_contactUsContent{width: 100%;height: 100%;}
+.lb_ContactContent{width: 100%;padding: 0 12px 44px;}
+.lb_ContactTitle{padding: 44px 38px 12px;overflow: hidden;}
+.lb_ContactTitle::before{content: '';display: inline-block;width: 22px;height: 26px;background: url(../../../images/andClub/V2_0/question.png) no-repeat;
+background-size: 100%;margin-right: 17px;float: left;}
+.lb_ContactTitle>p{float: left;width: 80%;}
+.lb_ContactLine{width: 100%;height: 2px;
+    background: -webkit-linear-gradient(left, transparent , #cfcaca , transparent);
+    background:-moz-linear-gradient(left, transparent , #cfcaca , transparent);
+    background:linear-gradient(left, transparent , #cfcaca , transparent);}
+.lb_ContactLine+p{padding: 9px 38px 0;color: #7f8e9d;}
+/*常见问题页 结束*/
+
+
+/*留言反馈 开始*/
+.lb_feedMain{width: 100%;padding:40px 33px;}
+.lb_feedMain>dt,.lb_feedMain>dd{width: 100%;}
+.lb_feedMain>dt{padding-bottom: 24px;position: relative;}
+.lb_feedItem{width: 100%;background: white;border-radius: 8px;border: 1px solid #dfdede;}
+.lb_feedItem+label{color: #ef5a5a;text-align: center;width: 100%;position: absolute;bottom: 5px;display: none;}
+.lb_feedItem+label::before{content:"";display: inline-block;width:13px;height:12px;vertical-align: -2px;margin-right: 3px;
+    background: url(../../../images/andClub/V2_0/warning.png) no-repeat 0;background-size: 100%;}
+.lb_feedTitle{height: 40px;padding: 0 12px;}
+.lb_feedContent{height: 195px;padding: 12px;resize: none;}
+.lb_feedContent+p{color: #a7b1bb;text-align: left;margin: 16px 0 33px;}
+.lb_feedContent+p>span{color: #d6707e;}
+.lb_myFeedback{display: block;text-align: center;text-decoration: underline;color:#a7b1bb;margin-top: 14px;}
+/*留言反馈 结束*/
+
+
+/*我的反馈 开始*/
+.lb_myfeedbackList{width: 100%;padding: 23px 12px;}
+.lb_myfeedbackList>li{width: 100%;border-radius: 10px;border: 1px solid #cad1d7;box-shadow: 0 2px 2px rgba(222,228,232,0.8);
+    -webkit-box-shadow: 0 2px 2px rgba(222,228,232,0.8);-moz-box-shadow: 0 2px 2px rgba(222,228,232,0.8);margin-bottom: 23px;}
+.lb_myfeedbackList>li>section{padding: 0 20px;}
+.lb_adminAnswerWindow{border-top: 1px solid #cad1d7;}
+.lb_myfeedbackList>li:last-child{margin: 0;}
+.lb_myfeedbackTitle,.lb_adminAnswer{padding: 16px 0;border-bottom: 1px solid #ebeff4;}
+.lb_myfeedbackTitle i,.lb_adminAnswer i{display: inline-block;width: 22px;height: 26px;
+    background-size: 100%;margin-right: 17px;vertical-align: bottom;}
+.lb_myfeedbackTitle i{background-image: url(../../../images/andClub/V2_0/question.png);}
+.lb_adminAnswer i{background-image: url(../../../images/andClub/V2_0/answer.png);}
+.lb_myfeedbackTitle>p>span{vertical-align: bottom;}
+.lb_myfeedbackTitle>p:last-child,.lb_myfeedbackContent,.lb_adminAnswer>p:last-child{color: #7f8e9d;}
+.lb_myfeedbackContent{padding: 16px 0;}
+
+
+/*选项聚合页 开始*/
+.lb_clubTypeMain{width: 100%;padding: 7px 0 20px;}
+.lb_clubTypeMain>dl{width: 100%;margin-bottom: 7px;}
+.lb_clubTypeMain>dl:last-child{margin: 0;}
+.lb_clubTypeMain>dl>dt{width: 100%;height: 33px;color: white;line-height: 33px;text-align: center;}
+.lb_clubTypeMain>dl>dd{width: 100%;height: 48px;border-bottom: 1px solid #f0f4f8;padding: 0 12px 0 23px;background: white;color: #414957;}
+.lb_clubTypeMain>dl>dd:after{content: '';display: block;width: 8px;height: 12px;background-image: url(../../../images/andClub/V2_0/grayArr.png);background-repeat: no-repeat;
+background-size: 100%;}
+.lb_clubTypeMain>dl>dd:active{background: #559ff2;color: white;}
+.lb_clubTypeMain>dl>dd:active:after{background-image: url(../../../images/andClub/V2_0/actlistBar.png);}
+.lb_typeImg{width:30px;height: 30px;overflow: hidden;position: relative;background:#b5b8c0;margin-right: 13px;display: inline-block;vertical-align: -10px;}
+.lb_typeImg>img{width: 102%;position: absolute;left: -1%;top:-1%;}
+.lb_clubTypeSport{background: #559ff2;}
+.lb_clubTypeCulture{background: #91c06e;}
+.lb_clubTypeLife{background: #edc33d;}
+.lb_clubTypeBusiness{background: #d25e67;}
+/*选项聚合页 结束*/
+
+/*在线报名 开始*/
+.lb_sosBanner{width: 100%;height: 222px;background-size: cover;background-position: center center;
+background-repeat: no-repeat;background-color:#b5b8c0;position: fixed;font-weight: bolder;color: white;left: 0;top:0;z-index: 5;}
+.lb_sosBanner>div{width: 100%;text-align: center;}
+.lb_sosSuccess{background-image: url(../../../images/andClub/V2_0/Su_1.jpg);}
+.lb_sosFail{background-image: url(../../../images/andClub/V2_0/Su_2.jpg);}
+.lb_sosBanner>p{width: 100%;position: absolute;right: 0;text-align: center;padding: 0 12px;bottom: 13px;color: rgba(255,255,255,0.4);}
+.lb_sosTitle{width: 100%;color: #414957;padding: 40px 12px 12px;margin-top: 222px;}
+.lb_sosTitle>span{display: inline-block;text-align: center;}
+.lb_sosTitle>div:first-child{height: 1px;
+    background: -webkit-linear-gradient(left, transparent , #414957);
+    background:-moz-linear-gradient(left, transparent , #414957);
+    background:linear-gradient(left, transparent , #414957);
+}
+.lb_sosTitle>div:last-child{height: 1px;
+    background: -webkit-linear-gradient(right, transparent , #414957);
+    background:-moz-linear-gradient(right, transparent , #414957);
+    background:linear-gradient(right, transparent , #414957);
+}
+.lb_sosContent{width: 100%;color: #414957;padding: 0 40px 30px;}
+
+/*红色提示*/
+.lb_sosPrompt{width: 100%;text-align: right;padding:0 20px 10px;color: #e4686d;}
+.lb_sosPrompt:before{content: '';display: inline-block;width: 3px;height: 11px;background-image: url(../../../images/andClub/V2_0/actIcon2.png);
+background-repeat: no-repeat;background-size: 100%;margin-right: 5px;vertical-align: -2px;}
+/*在线报名 结束*/
+
+/*活动通知 开始*/
+.lb_actListContent{width: 100%;height: 100%;}
+.lb_actNoticeMain{width: 100%;padding: 0 12px;}
+.lb_actNoticeMain>li{width: 100%;padding: 12px 7px;border-bottom: 1px dashed #e2e2e2;}
+.lb_actNoticeMain>li h3{color:#414957; }
+.lb_actNoticeMain>li:last-child{border-bottom: none;}
+.lb_actNoticeList{width: 100%;border-radius: 10px;position: relative;border: 1px solid #e1e9f2;background: white;}
+.lb_actNoticeList:before{width: 10px;height: 12px;content: '';display: block;background-image:url(../../../images/andClub/V2_0/nail.png);
+    background-size: 100%;background-repeat: no-repeat;position: absolute;right: 9px;top:9px;}
+.lb_actNoticeList:after{width: 30px;height: 30px;content: '';display: block;background-image: url(../../../images/andClub/V2_0/juanbian.png);
+    background-size: 100%;background-repeat: no-repeat;position: absolute;right: -2px;bottom:-1px;}
+
+/*风格一*/
+li.lb_sctNoticeSt_1>.lb_actNoticeList{padding: 20px 23px 9px 20px;}
+li.lb_sctNoticeSt_1>.lb_actNoticeList>h3{text-overflow:ellipsis;overflow: hidden;white-space: nowrap;border-bottom: 1px solid #e6edf4;padding-bottom: 5px;margin-bottom: 5px;}
+/*风格二*/
+li.lb_sctNoticeSt_2>.lb_actNoticeList,li.lb_sctNoticeSt_3>.lb_actNoticeList,li.lb_sctNoticeSt_4>.lb_actNoticeList{padding: 10px 23px 9px 20px;}
+li.lb_sctNoticeSt_2>.lb_actNoticeList>h3{text-overflow:ellipsis;overflow: hidden;white-space: nowrap;margin-bottom: 5px;}
+/*风格三*/
+li.lb_sctNoticeSt_3 .lb_actimg_one{width: 50%;height: 88px;border-radius: 6px;background-color:#b5b8c0;background-size: cover;background-repeat: no-repeat;background-position: center center;}
+.lb_acttiwindow{width: 100%;overflow: hidden;}
+.lb_acttiwindow>h3{width: 50%;height: 88px;padding-right: 12px;}
+/*风格四*/
+
+.lb_actimg_two{margin-top: 10px;width: 100%;height: 62px;}
+.lb_actimg_two>li{border-radius: 5px;margin-right: 2%;width: 42%;background-color:#b5b8c0;background-size: cover;background-repeat: no-repeat;background-position: center center;}
+
+
+.lb_actNoticeList>p,.lb_actNoticeDate{color: #7f8e9d;}
+.lb_actNoticeDate{text-align: right;padding:5px 5px 0;}
+.lb_actNoticeImage{margin-top: 10px;width: 100%;height: 62px;}
+.lb_actNoticeImage>li{border-radius: 5px;margin-right: 2%;width: 32%;background-color:#b5b8c0;background-size: cover;background-repeat: no-repeat;background-position: center center;}
+.lb_actNoticeImage>li:last-child{margin: 0;}
+
+/*活动通知 结束*/
+
+
+/*活动通知详情页 开始*/
+.lb_notDetMain{width: 100%;padding:0 38px;}
+.lb_notdetTitle{width: 100%;text-align: center;color: #414957;padding: 25px 0 17px;}
+.lb_notdetDate{text-align: left;color: #7f8e9d;}
+.lb_notdetImg{width: 100%;padding: 16px 0;border-bottom: 1px dashed #7f8e9d;}.lb_notdetImg>img{width: 100%;}
+.lb_notdetContent{width: 100%;padding: 16px 0 70px;color: #7f8e9d;}
+/*活动通知详情页 结束*/
+
+
+/*教练课程页 开始*/
+.lb_coaclassHead{width: 100%;position: fixed;left:0;top:0;z-index: 3}
+.lb_coaclassContent,.lb_coaclassYuyue{margin-top: 100px;position: relative;}
+.lb_coaclassKYY>li.lb_coaclassKyyNone,.lb_coaclassYYY>li.lb_coaclassKyyNone{border-radius: 0;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;
+border: none;background: transparent;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%,10%);
+    -webkit-transform: translate(-50%,10%);-moz-transform: translate(-50%,10%);}
+.lb_coaclassYYY>li.lb_coaclassKyyNone>img{width: 40%;}
+li.lb_coaclassKyyNone>img{width: 50%;}
+li.lb_coaclassKyyNone>p{width: 100%;color: #414957;padding-top: 20px;}
+
+
+/*教练课程页 结束*/
+
+
+/*活动页滑动卡 开始*/
+.swiper-container,#lb_actCardBody{height: 100%;}
+.my-pagination ul {display: -webkit-box;display: -moz-box;border-bottom: 1px solid #dfe8f1;}
+.my-pagination li{display: block;background: #fff;overflow: hidden;text-align: center;
+    box-flex: 1;-moz-box-flex: 1;-webkit-box-flex: 1;height: 40px;border-radius: 0;opacity: 1;
+    line-height: 40px;position: relative;font-size: 15px;}
+.my-pagination li:nth-child(1).swiper-pagination-bullet-active {color: #559ff2;}
+.my-pagination li:nth-child(1).swiper-pagination-bullet-active:after {opacity: 1;background-color: #559ff2;height: 4px;}
+
+.my-pagination li:nth-child(2).swiper-pagination-bullet-active {color: #91c06e;}
+.my-pagination li:nth-child(2).swiper-pagination-bullet-active:after {opacity: 1;background-color: #91c06e;height: 4px;}
+
+.my-pagination li:nth-child(3).swiper-pagination-bullet-active {color: #edc33d;}
+.my-pagination li:nth-child(3).swiper-pagination-bullet-active:after {opacity: 1;background-color: #edc33d;height: 4px;}
+
+.my-pagination li:nth-child(4).swiper-pagination-bullet-active {color: #d25e67;}
+.my-pagination li:nth-child(4).swiper-pagination-bullet-active:after {opacity: 1;background-color: #d25e67;height: 4px;}
+
+
+.my-pagination li:after {position: absolute;top: auto;right: auto;bottom: 0;left: 0;z-index: 1;display: block;width: 100%;
+    height: 1px;content: '';background-color: #dcdcdc;-webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;-webkit-transform: scaleY(.5);}
+.swiper-slide{width: 100%;height: 90%;}
+.lb_actCardPage{text-align: center;padding: 3% 0;}
+.lb_PageNum{color: white;position: absolute;left: 3.2%;top:3%;}
+.lb_PageTitle{text-align: center;color: #414957;padding: 5% 0;}
+.lb_PageImg{width: 85%;height: 35%;border-radius: 8px;background-color:#b5b8c0;margin: 0 auto;background-position: center center;background-repeat: no-repeat;
+background-size: cover;}
+.lb_PageContent{width: 85%;height: 40%;margin: 3% auto 0;overflow: hidden;color: #7f8e9d;line-height:15px;}
+.lb_actContentFont{width: 85%;height: 75%;margin: 0 auto;overflow: hidden;color: #7f8e9d;line-height:15px;}
+
+
+.lb_PageContent::before{content: '';display: block;width:16px;height: 6px;margin-bottom: 3% }
+.lb_moreBtn,.lb_ckgdBtn{width: 100%;text-align: center;}
+.lb_moreBtn>a{width: 133px;height: 30px;line-height:30px;color: white;display: inline-block;
+background-size: 100%;background-repeat: no-repeat;background-color: transparent;}
+.lb_ckgdBtn{padding: 5% 0;}
+.lb_ckgdBtn>a{text-decoration: underline;}
+
+
+
+
+
+
+/*运动类下面的页码字体颜色*/
+.swiper-wrapper>.swiper-slide:first-child .lb_actCardPage{color: #559ff2;}
+.swiper-wrapper>.swiper-slide:first-child .lb_moreBtn>a{background-image: url(../../../images/andClub/V2_0/little_blue.svg);}
+.swiper-wrapper>.swiper-slide:first-child .lb_ckgdBtn>a{color: #559ff2;}
+    /*运动类下面的小条颜色*/
+.swiper-wrapper>.swiper-slide:first-child .lb_PageContent::before{background:#559ff2;}
+
+/*文化类下面的页码字体颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(2) .lb_actCardPage{color: #91c06e;}
+.swiper-wrapper>.swiper-slide:nth-child(2) .lb_moreBtn>a{background-image: url(../../../images/andClub/V2_0/little_green.svg);}
+.swiper-wrapper>.swiper-slide:nth-child(2) .lb_ckgdBtn>a{color: #91c06e;}
+/*文化类下面的小条颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(2) .lb_PageContent::before{background:#91c06e;}
+
+/*生活类下面的页码字体颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(3) .lb_actCardPage{color: #edc33d;}
+.swiper-wrapper>.swiper-slide:nth-child(3) .lb_moreBtn>a{background-image: url(../../../images/andClub/V2_0/little_yellow.svg);}
+.swiper-wrapper>.swiper-slide:nth-child(3) .lb_ckgdBtn>a{color: #edc33d;}
+/*生活类下面的小条颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(3) .lb_PageContent::before{background:#edc33d;}
+
+/*商业类下面的页码字体颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(4) .lb_actCardPage{color: #d25e67;}
+.swiper-wrapper>.swiper-slide:nth-child(4) .lb_moreBtn>a{background-image: url(../../../images/andClub/V2_0/little_red.svg);}
+.swiper-wrapper>.swiper-slide:nth-child(4) .lb_ckgdBtn>a{color: #d25e67;}
+/*商业类下面的小条颜色*/
+.swiper-wrapper>.swiper-slide:nth-child(4) .lb_PageContent::before{background:#d25e67;}
+
+/*加载动效*/
+.lb_loading{width: 100%;height: 100%;background: rgba(0,0,0,0.6);position: fixed;z-index: 100;left: 0;top: 0;display: none;}
+.loadEffect{width: 100px;height: 100px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);}
+.loadEffect span{display: inline-block;width: 20px;height: 20px;border-radius: 50%;
+    background: #559ff2;  position: absolute;  -webkit-animation: load 1.04s ease infinite;  }
+@-webkit-keyframes load{
+    0%{
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: scale(.3);
+        opacity: 0.5;
+    }
+}
+.loadEffect span:nth-child(1){  left: 0;  top: 50%;  margin-top:-10px;  -webkit-animation-delay:0.13s;  }
+.loadEffect span:nth-child(2){  left: 14px;  top: 14px;  -webkit-animation-delay:0.26s;  }
+.loadEffect span:nth-child(3){  left: 50%;  top: 0;  margin-left: -10px;  -webkit-animation-delay:0.39s;  }
+.loadEffect span:nth-child(4){  top: 14px;  right:14px;  -webkit-animation-delay:0.52s;  }
+.loadEffect span:nth-child(5){  right: 0;  top: 50%;  margin-top:-10px;  -webkit-animation-delay:0.65s;  }
+.loadEffect span:nth-child(6){  right: 14px;  bottom:14px;  -webkit-animation-delay:0.78s;  }
+.loadEffect span:nth-child(7){  bottom: 0;  left: 50%;  margin-left: -10px;  -webkit-animation-delay:0.91s;  }
+.loadEffect span:nth-child(8){  bottom: 14px;  left: 14px;  -webkit-animation-delay:1.04s;  }
+/*活动页滑动卡 结束*/
+
+
+/*活动页详情页 开始*/
+.lb_actcard_detTitle{text-align: center;padding: 40px 12px 26px;color: #414957;}
+.lb_actcard_detContent{width:100%;padding: 0 29px 45px;}
+.lb_actcard_Img{width: 100%;height: 168px;border-radius: 10px;background-color:#b5b8c0;background-size: cover;background-position: center center;background-repeat: no-repeat;}
+.lb_actcard_Color{width: 23px;height: 7px;background: #d25e67;margin: 15px 0;}
+.lb_actcard_par{color: #7f8e9d;width: 100%;}
+/*活动页详情页 结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

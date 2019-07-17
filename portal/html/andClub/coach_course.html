@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>教练信息</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+    <!--本页逻辑-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/coach_course.js"></script>
+</head>
+<body>
+
+<!--头部 开始-->
+<header class="lb_coaclassHead">
+    <!--教练名字 开始-->
+    <div class="lb_coaInfoSy2Head font_4">
+        乒乓球教练：赵辉
+    </div>
+    <!--教练名字 结束-->
+    <div class="lb_coaclassTab">
+        <!--pageActive为选中状态-->
+        <div class="font_1 lb_fl pageActive" data-lbclass="lb_coaclassKYY" data-btnclass="lb_yyBtnWindow">可预约</div>
+        <div class="font_1 lb_fr" data-lbclass="lb_coaclassYYY" data-btnclass="lb_CancelBtnWindow">已预约(<span>5</span>)</div>
+    </div>
+</header>
+<!--头部 结束-->
+
+<!--可预约课程列表 开始-->
+<ul class="lb_coaclassContent lb_coaclassKYY">
+    <!--加上 class='lb_courseCheacked' 为选中状态-->
+    <li class='lb_courseCheacked'>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+    <!--加上 class='lb_courseNon' 为不可选状态-->
+    <li class='lb_courseNon'>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+                开课前两小时<br/>
+                不可取消预约
+        </p>
+    </li>
+    <!--正常状态-->
+    <li>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+    <li>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+    <!--加上 class='lb_courseNon' 为不可选状态-->
+    <li class='lb_courseNon'>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+                预约<br/>
+                已满
+        </p>
+    </li>
+    <!--加上 class='lb_courseNon' 为不可选状态-->
+    <li class='lb_courseNon'>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            正在授课<br/>
+            不可预约
+        </p>
+    </li>
+    <!--加上 class='lb_courseNon' 为不可选状态-->
+    <li class='lb_courseNon'>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            已预约本时<br/>
+            段其他课程
+        </p>
+    </li>
+</ul>
+<!--可预约课程列表 结束-->
+
+<!--已预约课程列表 开始-->
+<ul class="lb_coaclassYuyue lb_coaclassYYY d_none">
+    <!--正常状态-->
+    <li>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+    <li>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+    <li>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+    <!--加上 class='lb_courseNon' 为不可选状态-->
+    <li class='lb_courseNon'>
+        <section class="lb_courseTop">
+            <div class="lb_fl lb_checkBox" flex="main:center cross:bottom">
+                <img src="../../images/andClub/V2_0/classChecked.png" alt="选中"/>
+            </div>
+            <div class="lb_courseTopRight lb_fr">
+                <div class="lb_courseTitle" flex="dir:top">
+                    <p class="font_1">课程名称</p>
+                    <p class="font_6">
+                        <span class="lb_courseDate">2017-1-23</span>
+                        <span>14:00-14:45</span>
+                    </p>
+                </div>
+                <div class="lb_courseItem font_6" flex="main:justify cross:center">
+                    <p flex-box="3"><i class="lb_courseIcon timeIcon"></i><span>45分钟</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon numIcon"></i><span>62人/课堂</span></p>
+                    <p flex-box="3"><i class="lb_courseIcon teachIcon"></i><span>赵辉</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="lb_courseAdd font_6">
+            <i class="lb_courseIcon addIcon"></i>
+            <span>福州市层鼓楼区湖东路39号19层1901室</span>
+        </section>
+        <!--不可预约标签-->
+        <p class="lb_courseNonIcon font_6">
+            开课前两小时<br/>
+            不可取消预约
+        </p>
+    </li>
+</ul>
+<!--已预约课程列表 结束-->
+
+
+
+<!--预约课程按钮 开始-->
+<section class="lb_CancelYuyue lb_yyBtnWindow" flex="cross:center">
+    <!--按钮加上disabled为不可选状态，同时隐藏课程数，去掉为可选状态，显示课程数-->
+
+    <button type="button" class="font_2 lb_yyCourseBtn">
+        <i id="lb_courseNum">1</i>预约课程
+    </button>
+
+</section>
+<!--预约课程按钮 结束-->
+
+
+<!--取消预约按钮 开始-->
+<section class="lb_CancelYuyue lb_CancelBtnWindow d_none" flex="cross:center">
+    <!--按钮加上disabled为不可选状态，同时隐藏课程数，去掉为可选状态，显示课程数-->
+
+    <button type="button" class="font_2 lb_yyCourseBtn" disabled>
+        <i id="lb_courseNum_2">0</i>取消预约
+    </button>
+
+</section>
+<!--取消预约按钮 结束-->
+
+
+
+<!--遮罩开始(必须)-->
+<div class="mask"></div>
+<!--遮罩结束-->
+
+<!--弹窗的父Id（必须）-->
+<div id="Popwindow_content"></div>
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+</body>
+</html>

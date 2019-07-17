@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection"/>
+    <title>文字标题</title>
+    <!--public样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public.css">
+    <!--弹性布局-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/flex.css">
+    <!--本页样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/main.css">
+    <!--通用弹窗样式-->
+    <link rel="stylesheet" type="text/css" href="../../css/andClub/V2_0/public_pop.css">
+    <!--jq文件-->
+    <script type="text/javascript" src="../../js/andClub/jquery-2.1.4.min.js"></script>
+    <!--通用弹窗插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/public_popwindow.js"></script>
+    <!--懒加载插件-->
+    <script type="text/javascript" src="../../js/andClub/V2_0/jquery.lazyload.js"></script>
+</head>
+<body>
+
+<article class="lb_notDetMain">
+    <!--最多18个字-->
+    <h3 class="lb_notdetTitle font_8">“欢腾双十一”重磅出击 史上最强力度</h3>
+    <p class="lb_notdetDate font_6">10月14日 15：00</p>
+    <div class="lb_notdetImg">
+        <img class="lazy"  data-original="../../images/andClub/V2_0/kobe.jpg" alt="配图1"/>
+    </div>
+    <p class="lb_notdetContent font_3">
+        双十一特惠活动，A场+B场预约整月：原价230/特惠价99元，再加1元，可任选一个其他项目（游艇俱乐部、冰上双十一特惠活动，A场+B场预约整月）<br/><br/>
+        原价230/特惠价99元，再加1元，可任选一个其他项目（游艇俱乐部、冰上双十一特惠活动，A场+B场预约整月：原价230/特惠价99元，再加1元，可任选一个其他项目（游艇俱乐部、冰上双十一特惠活动。<br/><br/>
+        A场+B场预约整月：原价230/特惠价99元，再加1元，可任选一个其他项目（游艇俱乐部、冰上双十一特惠活动。
+    </p>
+</article>
+
+
+<script>
+    //在IOS界面中CSS的点击伪类active生效
+    document.body.addEventListener('touchstart', function () {});
+    //图片懒加载
+    $("img.lazy").lazyload({
+        effect : "fadeIn"//淡入
+    });
+</script>
+</body>
+</html>
